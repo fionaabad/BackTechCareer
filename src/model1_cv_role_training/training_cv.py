@@ -1,0 +1,81 @@
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import classification_report
+import joblib
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
+
+DATA_PATH = os.path.join(
+    BASE_DIR,
+    "data",
+    "model1_cv_role",
+    "3.processed",
+    "v1_english",
+    "cv_labeled_final.csv"
+)
+
+MODEL_DIR = os.path.join(BASE_DIR, "models", "cv_role")
+
+def ensure_dirs():
+    if not os.path.exists(MODEL_DIR):
+        os.makedirs(MODEL_DIR)
+
+def load_data():
+    df = pd.read_csv(DATA_PATH)
+
+    text_col = "cv_text"
+    label_col = "role_label_final"
+
+    X = df[text_col]
+    y = df[label_col]
+
+    return X, y
+
+def train_model(X, y):
+    vectorizer = TfidfVectorizer(
+        max_features=20000,
+        ngram_range=(1, 2),
+        stop_words="english"
+    )
+
+    X_vec = vectorizer.fit_transform(X)
+
+    model = LogisticRegression(max_iter=4000)
+
+    model.fit(X_vec, y)
+
+    return model, vectorizer
+
+def evaluate(model, vectorizer, X, y):
+    X_vec = vectorizer.transform(X)
+    preds = model.predict(X_vec)
+    print("\n=== REPORT ===\n")
+    print(classification_report(y, preds))
+
+def save_artifacts(model, vectorizer):
+    joblib.dump(model, os.path.join(MODEL_DIR, "model.pkl"))
+    joblib.dump(vectorizer, os.path.join(MODEL_DIR, "vectorizer.pkl"))
+    print("\nModel saved in:", MODEL_DIR)
+
+def main():
+    ensure_dirs()
+
+    print("Cargando dataset desde:", DATA_PATH)
+    X, y = load_data()
+
+    print("Entrenando modelo...")
+    model, vectorizer = train_model(X, y)
+
+    print("Evaluando modelo...")
+    evaluate(model, vectorizer, X, y)
+
+    print("Guardando artefactos...")
+    save_artifacts(model, vectorizer)
+
+    print("\nEntrenamiento completado ñaño, ahora sí súbelo al GitHub tranquilo.")
+
+if __name__ == "__main__":
+    main()
