@@ -94,6 +94,7 @@ def main():
     save_artifacts(model, vectorizer)
 
     print("Training completed.")
+    # asdas
 
 
 if __name__ == "__main__":
