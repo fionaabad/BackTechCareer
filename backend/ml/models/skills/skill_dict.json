@@ -1,1 +1,2527 @@
-{"etl": ["Admin Big Data", "Big Data Architect", "Big Data Engineer", "Big Data Specialist", "Data Analysts", "Data Architect", "DATA ANALYST", "Data Engineer", "Oracle Developer", "Oracle SQL Developer", "SQL Developer"], "data governance": ["Admin Big Data", "Big Data Architect", "Data Architect", "Principle Engineer in Big Data", "DATA MODELER"], "mapreduce": ["Admin Big Data", "Big Data Architect"], "hadoop": ["Admin Big Data", "Big Data Architect", "Big Data Engineer", "Big Data Specialist", "Principle Engineer in Big Data", "Data Engineer", "DATA SCIENTIST"], "big data architecture": ["Admin Big Data", "Principle Engineer in Big Data"], "spark": ["Admin Big Data", "Big Data Architect", "Big Data Engineer", "Big Data Specialist", "Principle Engineer in Big Data", "Data Engineer", "DATA SCIENTIST"], "azure": ["Admin Big Data", "Artificial intelligence Architect", "Big Data Architect", "Chef Operations Engineer", "Data Architect", "DevOps Architect", "DevOps Engineer", "ELK Engineer", "Kubernetes Operations Engineer", "Machine learning Architect", "Puppet Operations Engineer", "Senior DevOps Engineer", "Splunk Engineer", "Ansible Automation Engineer", "Azure DevOps Engineer", "Cloud administrator", "CLOUD ARCHITECT", "Cloud automation engineer", "Cloud engineer", "Cloud network engineer", "Cloud Security Engineer", "kubernetes Administrator", "Kubernetes Engineer", "Packer Engineer", "Puppet Engineer", "Senior Ansible Development Engineer", "Senior Cloud Architect", "Senior DevOps Architect", "Terraform Engineer"], "security": ["Admin Big Data", "Artificial intelligence Architect", "Big Data Architect", "DevOps Architect", "ELK Engineer", "Kubernetes Operations Engineer", "Machine learning Architect", "Splunk Engineer", "AWS Solutions Architect", "Chef InSpec Engineer", "Cloud administrator", "Cloud engineer", "Computer Network Architect", "Envoy Engineer", "Falco Engineer", "Fortify Engineer", "Information Security Analyst", "Istio Engineer", "kubernetes Administrator", "Kubernetes Engineer", "Micro services / API Lead Designer", "Network Engineer", "Notary Engineer", "OpenShift Engineer", "SECURITY SPECIALIST", "Senior Cloud Architect", "Senior DevOps Architect", "SonarQube Engineer"], "data warehousing": ["Admin Big Data", "Big Data Architect", "Big Data Engineer", "Data Architect", "Principle Engineer in Big Data", "Data Engineer", "DATA MODELER"], "data modeling": ["Admin Big Data", "Big Data Architect", "Big Data Specialist", "Data Analysts", "Data Architect", "Principle Engineer in Data Analysis", "DATA ANALYST", "Data Engineer", "DATA MODELER", "Programmer Analyst", "SQL Developer"], "cloud computing": ["Admin Big Data", "Artifactory Administrator", "Artificial Intelligence / Machine Learning Leader", "Artificial Intelligence / Machine Learning Sr.Leader", "Artificial intelligence Architect", "Big Data Architect", "Big Data Engineer", "Big Data Specialist", "Chef Operations Engineer", "Data Architect", "DevOps Architect", "DevOps Engineer", "Kubernetes Operations Engineer", "Machine learning Architect", "Operations Engineer", "Principle Engineer in Artificial Intelligence", "Principle Engineer in Big Data", "Principle Engineer in Machine Learning", "Puppet Operations Engineer", "Senior DevOps Engineer", "Site Reliability Engineer (Kubernetes \u2013 Docker)", ".NET Developer", "Ansible Automation Engineer", "AppDynamics Engineer", "Artifactory Engineer", "C# Developer", "Chef InSpec Engineer", "Cloud administrator", "Cloud automation engineer", "Cloud engineer", "Consul Engineer", "Data Engineer", "DATA SCIENTIST", "Datadog Engineer", "DEVOPS MANAGER", "Docker Engineer", "Envoy Engineer", "Falco Engineer", "FluentD Engineer", "Full Stack JAVA Developer/Programmer/Engineer", "Full Stack Python Developer/Programmer/Engineer", "Grafana Engineer", "Istio Engineer", "IT Manager", "Java Developer", "kubernetes Administrator", "Kubernetes Engineer", "Micro services / API Lead Designer", "New Relic Engineer", "Nomad Engineer", "Octopus Deploy Engineer", "OpenShift Engineer", "OpenStack Engineer", "Packer Engineer", "Powershell Engineer", "Prometheus Engineer", "Puppet Engineer", "Python Developer", "Senior Ansible Development Engineer", "Senior DevOps Architect", "Software Engineer", "SYSTEMS ENGINEER"], "aws": ["Admin Big Data", "Ansible Operations Engineer", "Artificial intelligence Architect", "Big Data Architect", "Chef Operations Engineer", "Data Architect", "DevOps Architect", "DevOps Engineer", "ELK Engineer", "Kubernetes Operations Engineer", "Machine learning Architect", "Puppet Operations Engineer", "Senior DevOps Engineer", "Splunk Engineer", "Ansible Automation Engineer", "AWS DevOps Engineer", "AWS Solutions Architect", "Cloud administrator", "CLOUD ARCHITECT", "Cloud automation engineer", "Cloud engineer", "Cloud network engineer", "Cloud Security Engineer", "DevSecOps Engineer", "kubernetes Administrator", "Kubernetes Engineer", "Packer Engineer", "Puppet Engineer", "Senior Ansible Development Engineer", "Senior Cloud Architect", "Senior DevOps Architect", "Terraform Engineer"], "data lakes": ["Admin Big Data", "Big Data Architect"], "nosql": ["Admin Big Data", "Big Data Architect", "Big Data Engineer", "Big Data Specialist", "Data Architect"], "kubernetes": ["Ansible Operations Engineer", "Build and Release Engineer", "DevOps Architect", "DevOps Engineer", "Jenkins Engineer", "Kubernetes Operations Engineer", "Senior Build and Release Engineer", "Senior DevOps Engineer", "Senior Site reliability Engineer", "Site Reliability Engineer (Kubernetes \u2013 Docker)", "AWS DevOps Engineer", "Azure DevOps Engineer", "CLOUD ARCHITECT", "DevSecOps Architect", "DevSecOps Engineer", "Docker Engineer", "Envoy Engineer", "Falco Engineer", "GCP DevOps Engineer", "Istio Engineer", "kubernetes Administrator", "Kubernetes Engineer", "OpenShift Engineer", "Prometheus Engineer", "Senior Cloud Architect", "Senior DevOps Architect", "Senior DevSecOps Architect", "Senior SRE Architect", "Senior SRE Engineer", "SRE Architect", "SRE Engineer"], "terraform": ["Ansible Operations Engineer", "DevOps Architect", "DevOps Engineer", "Senior DevOps Engineer", "AWS DevOps Engineer", "AWS Solutions Architect", "Azure DevOps Engineer", "CLOUD ARCHITECT", "Cloud automation engineer", "DevSecOps Architect", "DevSecOps Engineer", "GCP DevOps Engineer", "Senior DevOps Architect", "Senior DevSecOps Architect", "Terraform Engineer"], "automation": ["Ansible Operations Engineer", "Build and Release Engineer", "Chef Operations Engineer", "DevOps Architect", "DevOps Engineer", "Gerrit Administrator", "Jenkins Engineer", "Kubernetes Operations Engineer", "Operations Engineer", "Production Support Engineer", "Puppet Operations Engineer", "Senior Build and Release Engineer", "Senior DevOps Engineer", "Senior Site reliability Engineer", "Site Reliability Engineer (Kubernetes \u2013 Docker)", "Ansible Automation Engineer", "AWS DevOps Engineer", "Azure DevOps Engineer", "Bamboo Engineer", "Chef InSpec Engineer", "Cloud administrator", "CLOUD ARCHITECT", "Cloud automation engineer", "Cloud engineer", "Consul Engineer", "DEVOPS MANAGER", "Docker Engineer", "GCP DevOps Engineer", "Gerrit Engineer", "Git Engineer", "Github Engineer", "GitLab Engineer", "Groovy Engineer", "kubernetes Administrator", "Kubernetes Engineer", "Network and Systems Administrator", "Nomad Engineer", "OpenShift Engineer", "OpenStack Engineer", "Packer Engineer", "Powershell Engineer", "Puppet Engineer", "Senior Ansible Development Engineer", "Senior DevOps Architect", "Senior SRE Architect", "Senior SRE Engineer", "SRE Architect", "SRE Engineer", "UDeploy Engineer"], "cloud platforms": ["Ansible Operations Engineer", "Senior Site reliability Engineer", "Senior SRE Architect", "Senior SRE Engineer", "SRE Engineer"], "infrastructure as code": ["Ansible Operations Engineer", "Chef Operations Engineer", "Puppet Operations Engineer", "Ansible Automation Engineer", "Packer Engineer", "Puppet Engineer", "Senior Ansible Development Engineer"], "ansible": ["Ansible Operations Engineer", "DevOps Architect", "DevOps Engineer", "Senior DevOps Engineer", "Ansible Automation Engineer", "AWS DevOps Engineer", "Azure DevOps Engineer", "Cloud automation engineer", "DevSecOps Architect", "GCP DevOps Engineer", "Senior Ansible Development Engineer", "Senior DevOps Architect", "Senior DevSecOps Architect"], "docker": ["Ansible Operations Engineer", "Artifactory Administrator", "Build and Release Engineer", "DevOps Architect", "DevOps Engineer", "Jenkins Engineer", "Kubernetes Operations Engineer", "Senior Build and Release Engineer", "Senior DevOps Engineer", "Senior Site reliability Engineer", "Site Reliability Engineer (Kubernetes \u2013 Docker)", "Artifactory Engineer", "AWS DevOps Engineer", "Azure DevOps Engineer", "CLOUD ARCHITECT", "DevSecOps Architect", "DevSecOps Engineer", "Docker Engineer", "Envoy Engineer", "Falco Engineer", "Full Stack Python Developer/Programmer/Engineer", "GCP DevOps Engineer", "Istio Engineer", "kubernetes Administrator", "Kubernetes Engineer", "Nexus Engineer", "Nomad Engineer", "Notary Engineer", "OpenShift Engineer", "Prometheus Engineer", "Python Developer", "Senior Cloud Architect", "Senior DevOps Architect", "Senior DevSecOps Architect", "Senior SRE Architect", "Senior SRE Engineer", "SRE Architect", "SRE Engineer"], "scripting": ["Ansible Operations Engineer", "Build and Release Engineer", "Build Engineer", "DevOps Engineer", "Gerrit Administrator", "Jenkins Engineer", "Operations Engineer", "Production Support Engineer", "Senior Build and Release Engineer", "Senior Build Engineer", "Splunk Engineer", "Ansible Automation Engineer", "AWS DevOps Engineer", "Azure DevOps Engineer", "Bamboo Engineer", "Cloud administrator", "Cloud automation engineer", "Cloud engineer", "GCP DevOps Engineer", "Gerrit Engineer", "Git Engineer", "Github Engineer", "GitLab Engineer", "Groovy Engineer", "Nagios Engineer", "Network and Systems Administrator", "Octopus Deploy Engineer", "OpenStack Engineer", "Powershell Engineer", "Senior Ansible Development Engineer", "SYSTEMS ADMINISTRATOR"], "python": ["Ansible Operations Engineer", "Artificial Intelligence Researcher", "Big Data Engineer", "Data Analysts", "DevOps Engineer", "Machine Learning Engineer", "Principle Engineer in Artificial Intelligence", "Principle Engineer in Data Analysis", "Principle Engineer in Machine Learning", "Senior DevOps Engineer", "Senior Site reliability Engineer", "Ansible Automation Engineer", "Cloud automation engineer", "Computer Programmer", "Coverage.py Engineer", "DATA ANALYST", "Data Engineer", "DATA SCIENTIST", "Developer", "Entry Level Developer", "Entry Level Programmer", "Entry Level Software Developer", "Entry Level Software Engineer", "FRAMEWORKS SPECIALIST", "Full Stack Developer", "Full Stack Python Developer/Programmer/Engineer", "Jr Developer", "Junior Developer", "Junior Software Developer", "Junior Software Engineer", "Micro services / API Lead Designer", "New Grad Software Engineer", "Programmer", "PyTest Engineer", "Python Developer", "QA Engineer", "Robotics Engineer", "Selenium Engineer", "Senior Ansible Development Engineer", "Senior SRE Architect", "Senior SRE Engineer", "Software Developer", "Software Engineer", "SRE Engineer"], "linux": ["Ansible Operations Engineer", "Artifactory Administrator", "Build and Release Engineer", "Build Engineer", "Chef Operations Engineer", "DevOps Engineer", "ELK Engineer", "Gerrit Administrator", "Jenkins Engineer", "Kubernetes Operations Engineer", "Operations Engineer", "Production Support Engineer", "Puppet Operations Engineer", "Senior Build and Release Engineer", "Senior Build Engineer", "Senior DevOps Engineer", "Senior Site reliability Engineer", "Site Reliability Engineer (Kubernetes \u2013 Docker)", "Splunk Engineer", "Ansible Automation Engineer", "Artifactory Engineer", "AWS DevOps Engineer", "Azure DevOps Engineer", "Chef InSpec Engineer", "Cloud administrator", "Cloud engineer", "Datadog Engineer", "Docker Engineer", "Entry Level Network Engineer", "Full Stack Python Developer/Programmer/Engineer", "GCP DevOps Engineer", "Gerrit Engineer", "Grafana Engineer", "kubernetes Administrator", "Kubernetes Engineer", "Nagios Engineer", "Network and Systems Administrator", "Nomad Engineer", "OpenShift Engineer", "OpenStack Engineer", "Puppet Engineer", "Python Developer", "Senior Ansible Development Engineer", "Senior SRE Architect", "Senior SRE Engineer", "SRE Engineer"], "ci/cd": ["Ansible Operations Engineer", "Artifactory Administrator", "Build and Release Engineer", "Build Engineer", "DevOps Architect", "DevOps Engineer", "Jenkins Engineer", "Kubernetes Operations Engineer", "Senior Build and Release Engineer", "Senior Build Engineer", "Senior DevOps Engineer", "Senior Site reliability Engineer", "Site Reliability Engineer (Kubernetes \u2013 Docker)", "Artifactory Engineer", "AWS DevOps Engineer", "Azure DevOps Engineer", "Bamboo Engineer", "Bitbucket Engineer", "CLOUD ARCHITECT", "Cloud automation engineer", "Coverage.py Engineer", "DEVOPS MANAGER", "DevSecOps Architect", "DevSecOps Engineer", "Docker Engineer", "Full Stack Developer", "GCP DevOps Engineer", "Git Engineer", "Github Engineer", "GitLab Engineer", "Gradle Engineer", "JaCoCO Engineer", "JUnit Engineer", "kubernetes Administrator", "Kubernetes Engineer", "MAVEN Engineer", "Nexus Engineer", "Octopus Deploy Engineer", "OpenShift Engineer", "PyTest Engineer", "QA Engineer", "Selenium Engineer", "Senior DevOps Architect", "Senior DevSecOps Architect", "Senior SRE Architect", "Senior SRE Engineer", "Software Engineer", "SonarQube Engineer", "SRE Architect", "SRE Engineer", "TeamCity Engineer", "UDeploy Engineer", "XL Deploy Engineer"], "networking": ["Ansible Operations Engineer", "DevOps Architect", "DevOps Engineer", "ELK Engineer", "Kubernetes Operations Engineer", "Operations Engineer", "Production Support Engineer", "Senior DevOps Engineer", "Senior Site reliability Engineer", "Site Reliability Engineer (Kubernetes \u2013 Docker)", "Ansible Automation Engineer", "AWS Solutions Architect", "Cloud administrator", "CLOUD ARCHITECT", "Cloud engineer", "Consul Engineer", "Docker Engineer", "Entry Level Network Engineer", "Envoy Engineer", "Istio Engineer", "IT Manager", "kubernetes Administrator", "Kubernetes Engineer", "Nagios Engineer", "Network and Systems Administrator", "Nomad Engineer", "OpenStack Engineer", "Senior Ansible Development Engineer", "Senior DevOps Architect", "Senior SRE Architect", "Senior SRE Engineer", "SRE Architect", "SYSTEMS ADMINISTRATOR", "SYSTEMS ENGINEER"], "jenkins": ["Artifactory Administrator", "Build and Release Engineer", "Build Engineer", "DevOps Engineer", "Jenkins Engineer", "Senior Build and Release Engineer", "Senior Build Engineer", "Senior DevOps Engineer", "Artifactory Engineer", "Full Stack JAVA Developer/Programmer/Engineer", "Groovy Engineer", "Java Developer", "QA Engineer", "Software Engineer"], "version control": ["Artifactory Administrator", "Build Engineer", "Gerrit Administrator", "Jenkins Engineer", "Senior Build Engineer", "Artifactory Engineer", "Bamboo Engineer", "Bitbucket Engineer", "Gerrit Engineer", "Git Engineer", "Github Engineer", "GitLab Engineer", "Gradle Engineer", "MAVEN Engineer", "TeamCity Engineer", "UDeploy Engineer", "XL Deploy Engineer"], "build automation": ["Artifactory Administrator", "Build Engineer", "Jenkins Engineer", "Senior Build Engineer", "Artifactory Engineer", "Bamboo Engineer", "Gradle Engineer", "Groovy Engineer", "MAVEN Engineer", "Nexus Engineer", "TeamCity Engineer"], "git": ["Artifactory Administrator", "Build and Release Engineer", "Build Engineer", "DevOps Engineer", "Gerrit Administrator", "Senior Build and Release Engineer", "Senior Build Engineer", "Senior DevOps Engineer", ".NET Developer", "Artifactory Engineer", "Bamboo Engineer", "Bitbucket Engineer", "C# Developer", "Entry Level Developer", "Entry Level Software Developer", "Entry Level Software Engineer", "Entry Level Web Developer", "Full Stack JAVA Developer/Programmer/Engineer", "Full Stack Python Developer/Programmer/Engineer", "Gerrit Engineer", "Git Engineer", "Github Engineer", "GitLab Engineer", "Gradle Engineer", "Java Developer", "Jr Developer", "Junior Developer", "Junior Front End Developer", "Junior IOS Developer", "Junior Software Developer", "Junior Software Engineer", "Junior Web Developer", "MAVEN Engineer", "New Grad Software Engineer", "PHP Developer", "Python Developer", "QA Engineer", "React Developer", "RUBY ON RAILS DEVELOPER", "Software Engineer", "TeamCity Engineer"], "maven": ["Artifactory Administrator", "Build and Release Engineer", "Build Engineer", "Senior Build and Release Engineer", "Senior Build Engineer", "Artifactory Engineer", "Full Stack JAVA Developer/Programmer/Engineer", "Java Developer", "MAVEN Engineer", "Nexus Engineer"], "gradle": ["Artifactory Administrator", "Build and Release Engineer", "Build Engineer", "Senior Build and Release Engineer", "Senior Build Engineer", "Artifactory Engineer", "Gradle Engineer", "Nexus Engineer"], "jfrog cli": ["Artifactory Administrator"], "artifactory": ["Artifactory Administrator", "Artifactory Engineer"], "": ["Artificial intelligence / Machine Learning Engineer", "Twistkock Engineer"], "communication": ["Artificial Intelligence / Machine Learning Leader", "Artificial Intelligence / Machine Learning Sr.Leader", "AGILE PROJECT MANAGER", "DEVOPS MANAGER", "Director of Engineering", "PRODUCT MANAGER"], "team management": ["Artificial Intelligence / Machine Learning Leader", "Artificial Intelligence / Machine Learning Sr.Leader", "DEVOPS MANAGER", "Director of Engineering"], "data science": ["Artificial Intelligence / Machine Learning Leader", "Artificial Intelligence / Machine Learning Sr.Leader", "Artificial intelligence Architect", "Machine learning Architect", "Machine Learning Engineer", "Principle Engineer in Artificial Intelligence", "DATA SCIENTIST"], "deep learning": ["Artificial Intelligence / Machine Learning Leader", "Artificial Intelligence / Machine Learning Sr.Leader", "Artificial intelligence Architect", "Artificial Intelligence Researcher", "Machine learning Architect", "Machine Learning Engineer", "Principle Engineer in Artificial Intelligence", "Principle Engineer in Machine Learning"], "budgeting": ["Artificial Intelligence / Machine Learning Leader", "Artificial Intelligence / Machine Learning Sr.Leader", "DEVOPS MANAGER", "Director of Engineering", "IT Manager"], "stakeholder management": ["Artificial Intelligence / Machine Learning Leader", "Artificial Intelligence / Machine Learning Sr.Leader", "AGILE PROJECT MANAGER", "BUSINESS SYSTEMS ANALYST", "Computer Systems Analyst", "PRODUCT MANAGER"], "machine learning": ["Artificial Intelligence / Machine Learning Leader", "Artificial Intelligence / Machine Learning Sr.Leader", "Artificial intelligence Architect", "Artificial Intelligence Researcher", "Machine learning Architect", "Machine Learning Engineer", "Principle Engineer in Artificial Intelligence", "Principle Engineer in Machine Learning", "Computer Research Scientist", "DATA SCIENTIST"], "ai strategy": ["Artificial Intelligence / Machine Learning Leader", "Artificial Intelligence / Machine Learning Sr.Leader", "Principle Engineer in Artificial Intelligence"], "project management": ["Artificial Intelligence / Machine Learning Leader", "Artificial Intelligence / Machine Learning Sr.Leader", "Jira Administrator", "AGILE PROJECT MANAGER", "DEVOPS MANAGER", "Director of Engineering", "IT Manager", "JIRA Engineer", "TECHNICAL ACCOUNT MANAGER", "TECHNICAL LEAD"], "innovation": ["Artificial Intelligence / Machine Learning Sr.Leader", "Principle Engineer in Artificial Intelligence", "Principle Engineer in Big Data", "Principle Engineer in Data Analysis", "Principle Engineer in Machine Learning"], "mentoring": ["Artificial Intelligence / Machine Learning Sr.Leader", "Principle Engineer in Artificial Intelligence", "Principle Engineer in Big Data", "Principle Engineer in Data Analysis", "Principle Engineer in Machine Learning", "Senior Build and Release Engineer", "Senior Build Engineer"], "ai architecture": ["Artificial intelligence Architect"], "system design": ["Artificial intelligence Architect", "Machine learning Architect", "Principle Engineer in Artificial Intelligence"], "scalability": ["Artificial intelligence Architect", "Machine learning Architect"], "model deployment": ["Artificial intelligence Architect", "Machine learning Architect", "Principle Engineer in Machine Learning"], "research methods": ["Artificial Intelligence Researcher", "Computer Research Scientist"], "scientific writing": ["Artificial Intelligence Researcher", "Computer Research Scientist"], "tensorflow": ["Artificial Intelligence Researcher", "Machine Learning Engineer", "Principle Engineer in Artificial Intelligence", "Principle Engineer in Machine Learning"], "data analysis": ["Artificial Intelligence Researcher", "Big Data Specialist", "Machine Learning Engineer", "Principle Engineer in Data Analysis", "Splunk Engineer", "BUSINESS SYSTEMS ANALYST", "Computer Research Scientist", "Computer Systems Analyst", "Programmer Analyst"], "algorithm design": ["Artificial Intelligence Researcher"], "pytorch": ["Artificial Intelligence Researcher", "Machine Learning Engineer"], "statistical analysis": ["Artificial Intelligence Researcher", "Big Data Specialist"], "kafka": ["Big Data Architect", "Big Data Engineer", "Principle Engineer in Big Data"], "sql": ["Big Data Engineer", "Big Data Specialist", "Data Analysts", "Data Architect", "Principle Engineer in Data Analysis", "Android Developer", "BUSINESS SYSTEMS ANALYST", "Computer Systems Analyst", "DATA ANALYST", "Data Engineer", "DATA MODELER", "DATA SCIENTIST", "Database Administrator", "Entry Level Developer", "Entry Level Software Developer", "Entry Level Software Engineer", "Full Stack Developer", "Full Stack JAVA Developer/Programmer/Engineer", "Full Stack Python Developer/Programmer/Engineer", "IOS Developer", "Java Developer", "Jr Developer", "Junior Developer", "Junior Software Developer", "Junior Software Engineer", "New Grad Software Engineer", "Oracle Developer", "Oracle SQL Developer", "Programmer Analyst", "Python Developer", "RUBY ON RAILS DEVELOPER", "SQL Developer"], "java": ["Big Data Engineer", "Android Developer", "AppDynamics Engineer", "Computer Programmer", "Developer", "Entry Level Developer", "Entry Level Programmer", "Entry Level Software Developer", "Entry Level Software Engineer", "Fortify Engineer", "FRAMEWORKS SPECIALIST", "Full Stack JAVA Developer/Programmer/Engineer", "Gradle Engineer", "Groovy Engineer", "JaCoCO Engineer", "Java Developer", "Jr Developer", "Junior Developer", "Junior Software Developer", "Junior Software Engineer", "JUnit Engineer", "MAVEN Engineer", "Micro services / API Lead Designer", "MOBILE APP DEVELOPER", "Mobile Application Developer", "Mulesoft Developer", "New Grad Software Engineer", "New Relic Engineer", "Programmer", "Selenium Engineer", "Software Developer", "Software Engineer", "SonarQube Engineer"], "data pipelines": ["Big Data Engineer", "Data Engineer"], "scala": ["Big Data Engineer"], "data mining": ["Big Data Specialist", "Data Analysts", "DATA ANALYST"], "data visualization": ["Big Data Specialist", "Data Analysts", "ELK Engineer", "Principle Engineer in Data Analysis", "DATA ANALYST", "DATA SCIENTIST", "Grafana Engineer"], "build tools": ["Build and Release Engineer", "Senior Build and Release Engineer"], "ant": ["Build Engineer", "Senior Build Engineer"], "configuration management": ["Chef Operations Engineer", "Puppet Operations Engineer", "Chef InSpec Engineer", "Consul Engineer", "Puppet Engineer"], "chef": ["Chef Operations Engineer"], "ruby": ["Chef Operations Engineer", "Puppet Operations Engineer", "Puppet Engineer", "RUBY ON RAILS DEVELOPER"], "statistics": ["Data Analysts", "Principle Engineer in Data Analysis", "DATA ANALYST", "DATA SCIENTIST"], "r": ["Data Analysts", "DATA ANALYST", "DATA SCIENTIST"], "data cleansing": ["Data Analysts", "DATA ANALYST"], "tableau": ["Data Analysts", "DATA ANALYST"], "excel": ["Data Analysts", "DATA ANALYST"], "power bi": ["Data Analysts", "DATA ANALYST"], "data security": ["Data Architect"], "data integration": ["Data Architect"], "google cloud": ["DevOps Architect", "Cloud administrator", "CLOUD ARCHITECT", "Cloud automation engineer", "Cloud engineer", "Cloud network engineer", "GCP DevOps Engineer", "Packer Engineer", "Senior Cloud Architect", "Senior DevOps Architect", "Terraform Engineer"], "logstash": ["ELK Engineer"], "log management": ["ELK Engineer", "Splunk Engineer", "FluentD Engineer"], "kibana": ["ELK Engineer", "FluentD Engineer"], "elasticsearch": ["ELK Engineer", "FluentD Engineer"], "gerrit": ["Gerrit Administrator", "Gerrit Engineer"], "code review": ["Gerrit Administrator", "Bitbucket Engineer", "Gerrit Engineer", "Git Engineer"], "groovy": ["Jenkins Engineer", "Gradle Engineer", "Groovy Engineer"], "workflow configuration": ["Jira Administrator", "Confluence Engineer", "JIRA Engineer"], "user management": ["Jira Administrator", "Confluence Engineer", "JIRA Engineer"], "jira": ["Jira Administrator", "AGILE PROJECT MANAGER", "JIRA Engineer"], "agile methodologies": ["Jira Administrator", "AGILE PROJECT MANAGER", "Director of Engineering", "IT Manager", "JIRA Engineer", "PRODUCT MANAGER", "TECHNICAL LEAD"], "atlassian suite": ["Jira Administrator", "Bamboo Engineer", "Bitbucket Engineer", "Confluence Engineer", "JIRA Engineer"], "algorithms": ["Machine Learning Engineer", "Coder", "Computer Programmer", "Computer Research Scientist", "Developer", "Entry Level Developer", "Entry Level Programmer", "Entry Level Software Developer", "Entry Level Software Engineer", "Full Stack Python Developer/Programmer/Engineer", "Jr Developer", "Junior Developer", "Junior Software Developer", "Junior Software Engineer", "New Grad Software Engineer", "Programmer", "Python Developer", "Software Developer", "Software Engineer"], "natural language processing": ["Machine Learning Engineer"], "keras": ["Machine Learning Engineer"], "computer vision": ["Machine Learning Engineer"], "monitoring": ["Operations Engineer", "Production Support Engineer", "Senior Site reliability Engineer", "Site Reliability Engineer (Kubernetes \u2013 Docker)", "Datadog Engineer", "Grafana Engineer", "Nagios Engineer", "Prometheus Engineer", "Senior SRE Architect", "Senior SRE Engineer", "SRE Architect", "SRE Engineer"], "system administration": ["Operations Engineer", "Nagios Engineer", "Network and Systems Administrator"], "troubleshooting": ["Operations Engineer", "Production Support Engineer", "Site Reliability Engineer (Kubernetes \u2013 Docker)", "AppDynamics Engineer", "Datadog Engineer", "Entry Level Network Engineer", "Network and Systems Administrator", "New Relic Engineer", "SYSTEMS ADMINISTRATOR"], "windows server": ["Operations Engineer", "Production Support Engineer", "Entry Level Network Engineer", "Network and Systems Administrator", "Powershell Engineer"], "databases": ["Production Support Engineer"], "itil": ["Production Support Engineer"], "puppet": ["Puppet Operations Engineer", "Puppet Engineer"], "leadership": ["Senior Build and Release Engineer", "Senior Build Engineer", "Senior DevOps Engineer", "Senior Site reliability Engineer", "DEVOPS MANAGER", "Director of Engineering", "Senior Ansible Development Engineer", "Senior Cloud Architect", "Senior DevOps Architect", "Senior DevSecOps Architect", "Senior SRE Architect", "Senior SRE Engineer"], "sre": ["Senior Site reliability Engineer", "Site Reliability Engineer (Kubernetes \u2013 Docker)", "Senior SRE Architect", "Senior SRE Engineer", "SRE Architect", "SRE Engineer"], "devops": ["Senior Site reliability Engineer", "AWS DevOps Engineer", "AWS Solutions Architect", "Azure DevOps Engineer", "DEVOPS MANAGER", "Full Stack Developer", "GCP DevOps Engineer", "Senior SRE Architect", "Senior SRE Engineer", "SRE Engineer"], "splunk": ["Splunk Engineer"], "dashboards": ["Splunk Engineer", "Datadog Engineer", "Grafana Engineer"], "alerting": ["Splunk Engineer", "AppDynamics Engineer", "Datadog Engineer", "Grafana Engineer", "Nagios Engineer", "New Relic Engineer", "Prometheus Engineer"], ".net": [".NET Developer", "AppDynamics Engineer", "C# Developer", "Fortify Engineer", "New Relic Engineer", "Octopus Deploy Engineer", "Sharepoint Developer", "SonarQube Engineer"], "sql server": [".NET Developer", "C# Developer", "SQL Developer"], "c#": [".NET Developer", "C# Developer", "Game Developer", "Sharepoint Developer", "Unity Developer"], "web api": [".NET Developer", "C# Developer"], "mvc": [".NET Developer", "C# Developer"], "linq": [".NET Developer", "C# Developer"], "asp.net": [".NET Developer", "C# Developer"], "entity framework": [".NET Developer", "C# Developer"], "ui/ux": ["ACCESSIBILITY SPECIALIST"], "ada compliance": ["ACCESSIBILITY SPECIALIST"], "aria": ["ACCESSIBILITY SPECIALIST"], "css": ["ACCESSIBILITY SPECIALIST", "Entry Level Developer", "Entry Level Software Developer", "Entry Level Software Engineer", "Entry Level Web Developer", "Front End Developer", "Front End Web Developer", "Full Stack Developer", "Full Stack JAVA Developer/Programmer/Engineer", "Full Stack Python Developer/Programmer/Engineer", "JavaScript Developer", "Jr Developer", "Junior Developer", "Junior Front End Developer", "Junior Software Developer", "Junior Software Engineer", "Junior Web Developer", "New Grad Software Engineer", "PHP Developer", "React Developer", "RUBY ON RAILS DEVELOPER"], "wcag": ["ACCESSIBILITY SPECIALIST"], "assistive technologies": ["ACCESSIBILITY SPECIALIST"], "html": ["ACCESSIBILITY SPECIALIST", "Entry Level Developer", "Entry Level Software Developer", "Entry Level Software Engineer", "Entry Level Web Developer", "Front End Developer", "Front End Web Developer", "Full Stack Developer", "Full Stack JAVA Developer/Programmer/Engineer", "Full Stack Python Developer/Programmer/Engineer", "JavaScript Developer", "Jr Developer", "Junior Developer", "Junior Front End Developer", "Junior Software Developer", "Junior Software Engineer", "Junior Web Developer", "New Grad Software Engineer", "PHP Developer", "React Developer", "RUBY ON RAILS DEVELOPER"], "accessibility testing": ["ACCESSIBILITY SPECIALIST"], "javascript": ["ACCESSIBILITY SPECIALIST", "Blockchain Developer", "Entry Level Developer", "Entry Level Software Developer", "Entry Level Software Engineer", "Entry Level Web Developer", "FRAMEWORKS SPECIALIST", "Front End Developer", "Front End Web Developer", "Full Stack Developer", "Full Stack JAVA Developer/Programmer/Engineer", "Full Stack Python Developer/Programmer/Engineer", "Game Developer", "JavaScript Developer", "Jr Developer", "Junior Developer", "Junior Front End Developer", "Junior Software Developer", "Junior Software Engineer", "Junior Web Developer", "New Grad Software Engineer", "PHP Developer", "React Developer", "RUBY ON RAILS DEVELOPER", "Sharepoint Developer", "UI Developer", "Web Developer", "WordPress Developer"], "confluence": ["AGILE PROJECT MANAGER", "Confluence Engineer"], "kanban": ["AGILE PROJECT MANAGER"], "scrum": ["AGILE PROJECT MANAGER"], "kotlin": ["Android Developer", "MOBILE APP DEVELOPER", "Mobile Application Developer"], "rest apis": ["Android Developer", "Full Stack JAVA Developer/Programmer/Engineer", "Full Stack Python Developer/Programmer/Engineer", "IOS Developer", "Java Developer", "Micro services / API Lead Designer", "Mulesoft Developer", "Python Developer", "RUBY ON RAILS DEVELOPER", "Salesforce Developer", "Sharepoint Developer"], "android sdk": ["Android Developer", "MOBILE APP DEVELOPER", "Mobile Application Developer"], "ui/ux design": ["Android Developer", "Front End Developer", "Front End Web Developer", "INFORMATION ARCHITECT", "INTERACTION DESIGNER", "IOS Developer", "JavaScript Developer", "MOBILE APP DEVELOPER", "Mobile Application Developer", "React Developer", "Web Designer (UI/UX Designer)"], "firebase": ["Android Developer"], "mobile development": ["Android Developer", "IOS Developer", "MOBILE APP DEVELOPER", "Mobile Application Developer"], "android studio": ["Android Developer"], "appdynamics": ["AppDynamics Engineer"], "metrics": ["AppDynamics Engineer", "Datadog Engineer", "Grafana Engineer", "New Relic Engineer", "Prometheus Engineer"], "application performance monitoring": ["AppDynamics Engineer", "New Relic Engineer"], "dast": ["Application Security Engineer"], "sast": ["Application Security Engineer"], "penetration testing": ["Application Security Engineer", "DevSecOps Engineer", "Information Security Analyst", "SECURITY SPECIALIST"], "cloud security": ["Application Security Engineer", "AWS Solutions Architect", "CLOUD ARCHITECT", "Cloud Security Engineer", "DevSecOps Architect", "DevSecOps Engineer", "Senior DevSecOps Architect", "Vault Engineer"], "vulnerability management": ["Application Security Engineer", "Cloud Security Engineer", "DevSecOps Architect", "Fortify Engineer", "Information Security Analyst", "SECURITY SPECIALIST", "Senior DevSecOps Architect"], "owasp": ["Application Security Engineer"], "secure coding": ["Application Security Engineer"], "application security": ["Application Security Engineer"], "cloudformation": ["AWS DevOps Engineer", "AWS Solutions Architect"], "s3": ["AWS Solutions Architect"], "cloud architecture": ["AWS Solutions Architect", "CLOUD ARCHITECT", "Senior Cloud Architect", "SRE Architect"], "ec2": ["AWS Solutions Architect"], "aws lambda": ["AWS Solutions Architect"], "arm templates": ["Azure DevOps Engineer"], "bamboo": ["Bamboo Engineer"], "bitbucket": ["Bitbucket Engineer"], "branching strategies": ["Bitbucket Engineer", "Git Engineer"], "web3": ["Blockchain Developer"], "ethereum": ["Blockchain Developer"], "cryptocurrency": ["Blockchain Developer"], "distributed ledger": ["Blockchain Developer"], "smart contracts": ["Blockchain Developer"], "consensus algorithms": ["Blockchain Developer"], "node.js": ["Blockchain Developer", "Front End Developer", "Front End Web Developer", "Full Stack Developer", "JavaScript Developer", "React Developer", "Web Developer"], "solidity": ["Blockchain Developer"], "blockchain": ["Blockchain Developer"], "requirements gathering": ["BUSINESS SYSTEMS ANALYST", "Computer Systems Analyst", "Programmer Analyst"], "uml": ["BUSINESS SYSTEMS ANALYST", "Computer Systems Analyst"], "bpmn": ["BUSINESS SYSTEMS ANALYST"], "process improvement": ["BUSINESS SYSTEMS ANALYST", "Computer Systems Analyst", "Programmer Analyst"], "business analysis": ["BUSINESS SYSTEMS ANALYST"], "chef inspec": ["Chef InSpec Engineer"], "compliance as code": ["Chef InSpec Engineer"], "virtualization": ["Cloud administrator", "Cloud engineer", "OpenStack Engineer", "SYSTEMS ADMINISTRATOR"], "microservices": ["CLOUD ARCHITECT", "Full Stack JAVA Developer/Programmer/Engineer", "Java Developer", "Micro services / API Lead Designer", "Senior Cloud Architect"], "security groups": ["Cloud network engineer"], "cloud networking": ["Cloud network engineer", "Computer Network Architect"], "routing": ["Cloud network engineer", "Computer Network Architect", "Entry Level Network Engineer", "Network Engineer"], "vpc": ["Cloud network engineer"], "subnets": ["Cloud network engineer"], "firewalls": ["Cloud network engineer", "Computer Network Architect", "Information Security Analyst", "Network Engineer", "SECURITY SPECIALIST"], "identity and access management": ["Cloud Security Engineer"], "iam": ["Cloud Security Engineer"], "encryption": ["Cloud Security Engineer", "Vault Engineer"], "compliance": ["Cloud Security Engineer"], "gcp": ["Cloud Security Engineer"], "g-code": ["CNC Programmer"], "machining": ["CNC Programmer"], "cad/cam": ["CNC Programmer"], "blueprints": ["CNC Programmer"], "manufacturing processes": ["CNC Programmer"], "cnc programming": ["CNC Programmer"], "toolpath optimization": ["CNC Programmer"], "programming": ["Coder", "Computer Programmer", "Computer Research Scientist", "Developer", "Entry Level Programmer", "Programmer", "Programmer Analyst", "Software Developer"], "problem solving": ["Coder"], "software development": ["Coder", "Computer Programmer", "Developer", "Director of Engineering", "Fortify Engineer", "Programmer", "Software Developer"], "debugging": ["Coder", "Computer Programmer", "Developer", "Entry Level Programmer", "Programmer", "Software Developer"], "data structures": ["Coder", "Computer Programmer", "Developer", "Entry Level Developer", "Entry Level Programmer", "Entry Level Software Developer", "Entry Level Software Engineer", "Full Stack Python Developer/Programmer/Engineer", "Jr Developer", "Junior Developer", "Junior Software Developer", "Junior Software Engineer", "New Grad Software Engineer", "Programmer", "Python Developer", "Software Developer", "Software Engineer"], "maya": ["COMPUTER GRAPHICS ANIMATOR"], "3d animation": ["COMPUTER GRAPHICS ANIMATOR"], "2d animation": ["COMPUTER GRAPHICS ANIMATOR"], "visual effects": ["COMPUTER GRAPHICS ANIMATOR"], "motion graphics": ["COMPUTER GRAPHICS ANIMATOR"], "adobe creative suite": ["COMPUTER GRAPHICS ANIMATOR", "UI DESIGNER", "Web Designer (UI/UX Designer)"], "blender": ["COMPUTER GRAPHICS ANIMATOR"], "storyboarding": ["COMPUTER GRAPHICS ANIMATOR"], "pcb design": ["Computer Hardware Engineer"], "embedded systems": ["Computer Hardware Engineer", "Robotics Engineer"], "testing": ["Computer Hardware Engineer", "Coverage.py Engineer", "Embedded Software Engineer", "JaCoCO Engineer", "JUnit Engineer", "PyTest Engineer"], "validation": ["Computer Hardware Engineer"], "circuit design": ["Computer Hardware Engineer"], "hardware design": ["Computer Hardware Engineer", "Embedded Software Engineer"], "microprocessors": ["Computer Hardware Engineer"], "switching": ["Computer Network Architect", "Entry Level Network Engineer", "Network Engineer"], "network design": ["Computer Network Architect"], "lan/wan": ["Computer Network Architect", "Network Engineer"], "vpn": ["Computer Network Architect", "Network Engineer"], "tcp/ip": ["Computer Network Architect", "Entry Level Network Engineer", "Network Engineer"], "c++": ["Computer Programmer", "Developer", "Entry Level Programmer", "Game Developer", "Programmer", "Robotics Engineer", "Software Developer", "Software Engineer"], "publications": ["Computer Research Scientist"], "system analysis": ["Computer Systems Analyst"], "documentation": ["Confluence Engineer"], "collaboration": ["Confluence Engineer"], "consul": ["Consul Engineer"], "service discovery": ["Consul Engineer"], "coverage.py": ["Coverage.py Engineer"], "code coverage": ["Coverage.py Engineer", "JaCoCO Engineer"], "quality assurance": ["Coverage.py Engineer", "JaCoCO Engineer"], "database design": ["DATA MODELER", "Database Administrator", "Oracle Developer", "SQL Developer"], "er diagrams": ["DATA MODELER"], "data wrangling": ["DATA SCIENTIST"], "postgresql": ["Database Administrator"], "backup and recovery": ["Database Administrator"], "oracle": ["Database Administrator", "Oracle Developer"], "mysql": ["Database Administrator", "PHP Developer", "WordPress Developer"], "database management": ["Database Administrator"], "performance tuning": ["Database Administrator", "Oracle Developer", "Oracle SQL Developer", "SQL Developer"], "datadog": ["Datadog Engineer"], "devsecops": ["DevSecOps Architect", "DevSecOps Engineer", "Senior DevSecOps Architect"], "security automation": ["DevSecOps Architect", "Senior DevSecOps Architect"], "continuous security": ["DevSecOps Engineer"], "vulnerability scanning": ["DevSecOps Engineer"], "containerization": ["Docker Engineer"], "communication protocols": ["Embedded Software Engineer"], "microcontrollers": ["Embedded Software Engineer"], "embedded c": ["Embedded Software Engineer"], "firmware development": ["Embedded Software Engineer"], "rtos": ["Embedded Software Engineer"], "ui/ux basics": ["Entry Level Web Developer", "Junior Front End Developer", "Junior IOS Developer", "Junior Web Developer"], "web development fundamentals": ["Entry Level Web Developer", "Junior Web Developer"], "envoy": ["Envoy Engineer"], "service mesh": ["Envoy Engineer", "Istio Engineer"], "traffic management": ["Envoy Engineer", "Istio Engineer"], "threat detection": ["Falco Engineer", "Splunk Enterprise Security Engineer"], "system monitoring": ["Falco Engineer"], "falco": ["Falco Engineer"], "fluentd": ["FluentD Engineer"], "data processing": ["FluentD Engineer"], "data collection": ["FluentD Engineer"], "fortify": ["Fortify Engineer"], "static code analysis": ["Fortify Engineer", "SonarQube Engineer"], "spring framework": ["FRAMEWORKS SPECIALIST", "Full Stack JAVA Developer/Programmer/Engineer", "Java Developer"], "framework development": ["FRAMEWORKS SPECIALIST"], "vue.js": ["FRAMEWORKS SPECIALIST", "Front End Developer", "Front End Web Developer", "JavaScript Developer", "Junior Front End Developer"], "react": ["FRAMEWORKS SPECIALIST", "Front End Developer", "Front End Web Developer", "Full Stack Developer", "Full Stack JAVA Developer/Programmer/Engineer", "Full Stack Python Developer/Programmer/Engineer", "JavaScript Developer", "Junior Front End Developer", "React Developer", "Web Developer"], "angular": ["FRAMEWORKS SPECIALIST", "Front End Developer", "Front End Web Developer", "Full Stack Developer", "JavaScript Developer"], "django": ["FRAMEWORKS SPECIALIST", "Full Stack Developer", "Full Stack Python Developer/Programmer/Engineer", "Python Developer"], "sass": ["Front End Developer", "Front End Web Developer", "JavaScript Developer"], "typescript": ["Front End Developer", "Front End Web Developer", "JavaScript Developer"], "express.js": ["Full Stack Developer"], "mongodb": ["Full Stack Developer"], "hibernate": ["Full Stack JAVA Developer/Programmer/Engineer", "Java Developer"], "j2ee": ["Full Stack JAVA Developer/Programmer/Engineer", "Java Developer"], "junit": ["Full Stack JAVA Developer/Programmer/Engineer", "Java Developer", "JUnit Engineer", "QA Engineer"], "flask": ["Full Stack Python Developer/Programmer/Engineer", "Python Developer"], "game design": ["Game Developer"], "unity": ["Game Developer"], "unreal engine": ["Game Developer"], "game engines": ["Game Developer"], "vr development": ["Game Developer"], "github actions": ["Github Engineer"], "github": ["Github Engineer"], "gitlab ci": ["GitLab Engineer"], "gitlab": ["GitLab Engineer"], "grafana": ["Grafana Engineer"], "user research": ["INFORMATION ARCHITECT", "INTERACTION DESIGNER", "PRODUCT MANAGER", "UX DESIGNER"], "prototyping": ["INFORMATION ARCHITECT", "INTERACTION DESIGNER", "UI DESIGNER", "UX DESIGNER", "Web Designer (UI/UX Designer)"], "information architecture": ["INFORMATION ARCHITECT"], "wireframing": ["INFORMATION ARCHITECT", "INTERACTION DESIGNER", "UI DESIGNER", "UX DESIGNER", "Web Designer (UI/UX Designer)"], "content strategy": ["INFORMATION ARCHITECT"], "ids/ips": ["Information Security Analyst", "SECURITY SPECIALIST"], "network security": ["Information Security Analyst", "SECURITY SPECIALIST"], "security auditing": ["Information Security Analyst", "SECURITY SPECIALIST"], "usability testing": ["INTERACTION DESIGNER", "UX DESIGNER"], "interaction design": ["INTERACTION DESIGNER", "UX DESIGNER"], "swift": ["IOS Developer", "Junior IOS Developer", "MOBILE APP DEVELOPER", "Mobile Application Developer"], "objective-c": ["IOS Developer", "Junior IOS Developer", "MOBILE APP DEVELOPER", "Mobile Application Developer"], "xcode": ["IOS Developer", "Junior IOS Developer"], "ios sdk": ["IOS Developer", "Junior IOS Developer"], "istio": ["Istio Engineer"], "cybersecurity": ["IT Manager"], "team leadership": ["IT Manager", "TECHNICAL LEAD"], "it infrastructure": ["IT Manager"], "jacoco": ["JaCoCO Engineer"], "unit testing": ["JUnit Engineer", "PyTest Engineer"], "test automation": ["JUnit Engineer", "PyTest Engineer", "QA Engineer", "Selenium Engineer"], "dependency management": ["MAVEN Engineer"], "soa": ["Micro services / API Lead Designer", "Mulesoft Developer"], "api design": ["Micro services / API Lead Designer"], "react native": ["MOBILE APP DEVELOPER", "Mobile Application Developer"], "ios": ["MOBILE APP DEVELOPER", "Mobile Application Developer"], "flutter": ["MOBILE APP DEVELOPER", "Mobile Application Developer"], "integration": ["Mulesoft Developer"], "mulesoft": ["Mulesoft Developer"], "api development": ["Mulesoft Developer"], "anypoint platform": ["Mulesoft Developer"], "nagios": ["Nagios Engineer"], "cisco": ["Network Engineer"], "networking protocols": ["Network Engineer"], "new relic": ["New Relic Engineer"], "artifact repository": ["Nexus Engineer"], "nexus": ["Nexus Engineer"], "container orchestration": ["Nomad Engineer"], "nomad": ["Nomad Engineer"], "cryptography": ["Notary Engineer"], "notary": ["Notary Engineer"], "trust management": ["Notary Engineer"], "container security": ["Notary Engineer"], "deployment automation": ["Octopus Deploy Engineer", "XL Deploy Engineer"], "powershell": ["Octopus Deploy Engineer", "Powershell Engineer", "Sharepoint Developer"], "octopus deploy": ["Octopus Deploy Engineer"], "openshift": ["OpenShift Engineer"], "openstack": ["OpenStack Engineer"], "pl/sql": ["Oracle Developer", "Oracle SQL Developer"], "oracle sql developer": ["Oracle SQL Developer"], "database development": ["Oracle SQL Developer"], "packer": ["Packer Engineer"], "restful apis": ["PHP Developer"], "laravel": ["PHP Developer"], "symfony": ["PHP Developer"], "php": ["PHP Developer", "Web Developer", "WordPress Developer"], "active directory": ["Powershell Engineer"], "product management": ["PRODUCT MANAGER"], "roadmap planning": ["PRODUCT MANAGER"], "prometheus": ["Prometheus Engineer"], "pytest": ["PyTest Engineer"], "selenium": ["QA Engineer", "Selenium Engineer"], "agile testing": ["QA Engineer"], "automation testing": ["QA Engineer"], "performance testing": ["QA Engineer"], "testng": ["QA Engineer"], "redux": ["React Developer"], "robotics": ["Robotics Engineer"], "actuators": ["Robotics Engineer"], "control systems": ["Robotics Engineer"], "sensors": ["Robotics Engineer"], "ros": ["Robotics Engineer"], "ruby on rails": ["RUBY ON RAILS DEVELOPER"], "apex": ["Salesforce Developer"], "soql": ["Salesforce Developer"], "visualforce": ["Salesforce Developer"], "salesforce": ["Salesforce Developer"], "lightning": ["Salesforce Developer"], "salesforce administration": ["Salesforce Developer"], "keyword research": ["Search Engine Optimization"], "analytics": ["Search Engine Optimization"], "seo": ["Search Engine Optimization"], "off-page optimization": ["Search Engine Optimization"], "on-page optimization": ["Search Engine Optimization"], "content marketing": ["Search Engine Optimization"], "testing frameworks": ["Selenium Engineer"], "webdriver": ["Selenium Engineer"], "sharepoint": ["Sharepoint Developer"], "sharepoint framework": ["Sharepoint Developer"], "software design": ["Software Engineer"], "sonarqube": ["SonarQube Engineer"], "code quality": ["SonarQube Engineer"], "incident response": ["Splunk Enterprise Security Engineer"], "security information and event management (siem)": ["Splunk Enterprise Security Engineer"], "splunk enterprise security": ["Splunk Enterprise Security Engineer"], "security analysis": ["Splunk Enterprise Security Engineer"], "t-sql": ["SQL Developer"], "ssrs": ["SQL Developer"], "ssis": ["SQL Developer"], "incident management": ["SRE Architect"], "linux administration": ["SYSTEMS ADMINISTRATOR", "SYSTEMS ENGINEER"], "windows server administration": ["SYSTEMS ADMINISTRATOR", "SYSTEMS ENGINEER"], "systems design": ["SYSTEMS ENGINEER"], "teamcity": ["TeamCity Engineer"], "customer engagement": ["Tech Sales Engineer"], "product knowledge": ["Tech Sales Engineer"], "networking technologies": ["Tech Sales Engineer"], "technical sales": ["Tech Sales Engineer"], "technical support": ["TECHNICAL ACCOUNT MANAGER"], "account management": ["TECHNICAL ACCOUNT MANAGER"], "customer relationship management (crm)": ["TECHNICAL ACCOUNT MANAGER"], "software development lifecycle (sdlc)": ["TECHNICAL LEAD"], "infrastructure as code (iac)": ["Terraform Engineer"], ".net development tools": ["TFS Engineer"], "tfs (team foundation server)": ["TFS Engineer"], ".net framework": ["TFS Engineer"], "deployment strategies": ["UDeploy Engineer"], "udeploy (urbancode deploy)": ["UDeploy Engineer"], "figma": ["UI DESIGNER", "Web Designer (UI/UX Designer)"], "ui design principles": ["UI DESIGNER"], "user testing": ["UI DESIGNER"], "reactjs": ["UI Developer"], "jquery": ["UI Developer"], "css3": ["UI Developer", "Web Developer", "WordPress Developer"], "angularjs": ["UI Developer", "Web Developer"], "html5": ["UI Developer", "Web Developer", "WordPress Developer"], "responsive design": ["UI Developer"], "game development principles": ["Unity Developer"], "unity3d engine": ["Unity Developer"], "3d modeling": ["Unity Developer"], "animation": ["Unity Developer"], "user experience design principles": ["UX DESIGNER"], "hashicorp vault": ["Vault Engineer"], "access control": ["Vault Engineer"], "secrets management": ["Vault Engineer"], "wordpress": ["WordPress Developer"], "xl deploy": ["XL Deploy Engineer"], "monitoring tools": ["Zabbix Engineer"], "zabbix": ["Zabbix Engineer"], "network monitoring": ["Zabbix Engineer"], "alerting systems": ["Zabbix Engineer"]}
+{
+  "data governance": [
+    "admin big data",
+    "big data architect",
+    "data architect",
+    "data modeler",
+    "principle engineer in big data"
+  ],
+  "etl": [
+    "admin big data",
+    "big data architect",
+    "big data engineer",
+    "big data specialist",
+    "data analyst",
+    "data analysts",
+    "data architect",
+    "data engineer",
+    "oracle developer",
+    "oracle sql developer",
+    "sql developer"
+  ],
+  "data modeling": [
+    "admin big data",
+    "big data architect",
+    "big data specialist",
+    "data analyst",
+    "data analysts",
+    "data architect",
+    "data engineer",
+    "data modeler",
+    "principle engineer in data analysis",
+    "programmer analyst",
+    "sql developer"
+  ],
+  "azure": [
+    "admin big data",
+    "ansible automation engineer",
+    "artificial intelligence architect",
+    "azure devops engineer",
+    "big data architect",
+    "chef operations engineer",
+    "cloud administrator",
+    "cloud architect",
+    "cloud automation engineer",
+    "cloud engineer",
+    "cloud network engineer",
+    "cloud security engineer",
+    "data architect",
+    "devops architect",
+    "devops engineer",
+    "elk engineer",
+    "kubernetes administrator",
+    "kubernetes engineer",
+    "kubernetes operations engineer",
+    "machine learning architect",
+    "packer engineer",
+    "puppet engineer",
+    "puppet operations engineer",
+    "senior ansible development engineer",
+    "senior cloud architect",
+    "senior devops architect",
+    "senior devops engineer",
+    "splunk engineer",
+    "terraform engineer"
+  ],
+  "hadoop": [
+    "admin big data",
+    "big data architect",
+    "big data engineer",
+    "big data specialist",
+    "data engineer",
+    "data scientist",
+    "principle engineer in big data"
+  ],
+  "nosql": [
+    "admin big data",
+    "big data architect",
+    "big data engineer",
+    "big data specialist",
+    "data architect"
+  ],
+  "data warehousing": [
+    "admin big data",
+    "big data architect",
+    "big data engineer",
+    "data architect",
+    "data engineer",
+    "data modeler",
+    "principle engineer in big data"
+  ],
+  "big data architecture": [
+    "admin big data",
+    "principle engineer in big data"
+  ],
+  "security": [
+    "admin big data",
+    "artificial intelligence architect",
+    "aws solutions architect",
+    "big data architect",
+    "chef inspec engineer",
+    "cloud administrator",
+    "cloud engineer",
+    "computer network architect",
+    "devops architect",
+    "elk engineer",
+    "envoy engineer",
+    "falco engineer",
+    "fortify engineer",
+    "information security analyst",
+    "istio engineer",
+    "kubernetes administrator",
+    "kubernetes engineer",
+    "kubernetes operations engineer",
+    "machine learning architect",
+    "micro services / api lead designer",
+    "network engineer",
+    "notary engineer",
+    "openshift engineer",
+    "security specialist",
+    "senior cloud architect",
+    "senior devops architect",
+    "sonarqube engineer",
+    "splunk engineer"
+  ],
+  "spark": [
+    "admin big data",
+    "big data architect",
+    "big data engineer",
+    "big data specialist",
+    "data engineer",
+    "data scientist",
+    "principle engineer in big data"
+  ],
+  "data lakes": [
+    "admin big data",
+    "big data architect"
+  ],
+  "cloud computing": [
+    ".net developer",
+    "admin big data",
+    "ansible automation engineer",
+    "appdynamics engineer",
+    "artifactory administrator",
+    "artifactory engineer",
+    "artificial intelligence / machine learning leader",
+    "artificial intelligence / machine learning sr.leader",
+    "artificial intelligence architect",
+    "big data architect",
+    "big data engineer",
+    "big data specialist",
+    "c# developer",
+    "chef inspec engineer",
+    "chef operations engineer",
+    "cloud administrator",
+    "cloud automation engineer",
+    "cloud engineer",
+    "consul engineer",
+    "data architect",
+    "data engineer",
+    "data scientist",
+    "datadog engineer",
+    "devops architect",
+    "devops engineer",
+    "devops manager",
+    "docker engineer",
+    "envoy engineer",
+    "falco engineer",
+    "fluentd engineer",
+    "full stack java developer/programmer/engineer",
+    "full stack python developer/programmer/engineer",
+    "grafana engineer",
+    "istio engineer",
+    "it manager",
+    "java developer",
+    "kubernetes administrator",
+    "kubernetes engineer",
+    "kubernetes operations engineer",
+    "machine learning architect",
+    "micro services / api lead designer",
+    "new relic engineer",
+    "nomad engineer",
+    "octopus deploy engineer",
+    "openshift engineer",
+    "openstack engineer",
+    "operations engineer",
+    "packer engineer",
+    "powershell engineer",
+    "principle engineer in artificial intelligence",
+    "principle engineer in big data",
+    "principle engineer in machine learning",
+    "prometheus engineer",
+    "puppet engineer",
+    "puppet operations engineer",
+    "python developer",
+    "senior ansible development engineer",
+    "senior devops architect",
+    "senior devops engineer",
+    "site reliability engineer (kubernetes \u2013 docker)",
+    "software engineer",
+    "systems engineer"
+  ],
+  "mapreduce": [
+    "admin big data",
+    "big data architect"
+  ],
+  "aws": [
+    "admin big data",
+    "ansible automation engineer",
+    "ansible operations engineer",
+    "artificial intelligence architect",
+    "aws devops engineer",
+    "aws solutions architect",
+    "big data architect",
+    "chef operations engineer",
+    "cloud administrator",
+    "cloud architect",
+    "cloud automation engineer",
+    "cloud engineer",
+    "cloud network engineer",
+    "cloud security engineer",
+    "data architect",
+    "devops architect",
+    "devops engineer",
+    "devsecops engineer",
+    "elk engineer",
+    "kubernetes administrator",
+    "kubernetes engineer",
+    "kubernetes operations engineer",
+    "machine learning architect",
+    "packer engineer",
+    "puppet engineer",
+    "puppet operations engineer",
+    "senior ansible development engineer",
+    "senior cloud architect",
+    "senior devops architect",
+    "senior devops engineer",
+    "splunk engineer",
+    "terraform engineer"
+  ],
+  "ci/cd": [
+    "ansible operations engineer",
+    "artifactory administrator",
+    "artifactory engineer",
+    "aws devops engineer",
+    "azure devops engineer",
+    "bamboo engineer",
+    "bitbucket engineer",
+    "build and release engineer",
+    "build engineer",
+    "cloud architect",
+    "cloud automation engineer",
+    "coverage.py engineer",
+    "devops architect",
+    "devops engineer",
+    "devops manager",
+    "devsecops architect",
+    "devsecops engineer",
+    "docker engineer",
+    "full stack developer",
+    "gcp devops engineer",
+    "git engineer",
+    "github engineer",
+    "gitlab engineer",
+    "gradle engineer",
+    "jacoco engineer",
+    "jenkins engineer",
+    "junit engineer",
+    "kubernetes administrator",
+    "kubernetes engineer",
+    "kubernetes operations engineer",
+    "maven engineer",
+    "nexus engineer",
+    "octopus deploy engineer",
+    "openshift engineer",
+    "pytest engineer",
+    "qa engineer",
+    "selenium engineer",
+    "senior build and release engineer",
+    "senior build engineer",
+    "senior devops architect",
+    "senior devops engineer",
+    "senior devsecops architect",
+    "senior site reliability engineer",
+    "senior sre architect",
+    "senior sre engineer",
+    "site reliability engineer (kubernetes \u2013 docker)",
+    "software engineer",
+    "sonarqube engineer",
+    "sre architect",
+    "sre engineer",
+    "teamcity engineer",
+    "udeploy engineer",
+    "xl deploy engineer"
+  ],
+  "cloud platforms": [
+    "ansible operations engineer",
+    "senior site reliability engineer",
+    "senior sre architect",
+    "senior sre engineer",
+    "sre engineer"
+  ],
+  "docker": [
+    "ansible operations engineer",
+    "artifactory administrator",
+    "artifactory engineer",
+    "aws devops engineer",
+    "azure devops engineer",
+    "build and release engineer",
+    "cloud architect",
+    "devops architect",
+    "devops engineer",
+    "devsecops architect",
+    "devsecops engineer",
+    "docker engineer",
+    "envoy engineer",
+    "falco engineer",
+    "full stack python developer/programmer/engineer",
+    "gcp devops engineer",
+    "istio engineer",
+    "jenkins engineer",
+    "kubernetes administrator",
+    "kubernetes engineer",
+    "kubernetes operations engineer",
+    "nexus engineer",
+    "nomad engineer",
+    "notary engineer",
+    "openshift engineer",
+    "prometheus engineer",
+    "python developer",
+    "senior build and release engineer",
+    "senior cloud architect",
+    "senior devops architect",
+    "senior devops engineer",
+    "senior devsecops architect",
+    "senior site reliability engineer",
+    "senior sre architect",
+    "senior sre engineer",
+    "site reliability engineer (kubernetes \u2013 docker)",
+    "sre architect",
+    "sre engineer"
+  ],
+  "networking": [
+    "ansible automation engineer",
+    "ansible operations engineer",
+    "aws solutions architect",
+    "cloud administrator",
+    "cloud architect",
+    "cloud engineer",
+    "consul engineer",
+    "devops architect",
+    "devops engineer",
+    "docker engineer",
+    "elk engineer",
+    "entry level network engineer",
+    "envoy engineer",
+    "istio engineer",
+    "it manager",
+    "kubernetes administrator",
+    "kubernetes engineer",
+    "kubernetes operations engineer",
+    "nagios engineer",
+    "network and systems administrator",
+    "nomad engineer",
+    "openstack engineer",
+    "operations engineer",
+    "production support engineer",
+    "senior ansible development engineer",
+    "senior devops architect",
+    "senior devops engineer",
+    "senior site reliability engineer",
+    "senior sre architect",
+    "senior sre engineer",
+    "site reliability engineer (kubernetes \u2013 docker)",
+    "sre architect",
+    "systems administrator",
+    "systems engineer"
+  ],
+  "linux": [
+    "ansible automation engineer",
+    "ansible operations engineer",
+    "artifactory administrator",
+    "artifactory engineer",
+    "aws devops engineer",
+    "azure devops engineer",
+    "build and release engineer",
+    "build engineer",
+    "chef inspec engineer",
+    "chef operations engineer",
+    "cloud administrator",
+    "cloud engineer",
+    "datadog engineer",
+    "devops engineer",
+    "docker engineer",
+    "elk engineer",
+    "entry level network engineer",
+    "full stack python developer/programmer/engineer",
+    "gcp devops engineer",
+    "gerrit administrator",
+    "gerrit engineer",
+    "grafana engineer",
+    "jenkins engineer",
+    "kubernetes administrator",
+    "kubernetes engineer",
+    "kubernetes operations engineer",
+    "nagios engineer",
+    "network and systems administrator",
+    "nomad engineer",
+    "openshift engineer",
+    "openstack engineer",
+    "operations engineer",
+    "production support engineer",
+    "puppet engineer",
+    "puppet operations engineer",
+    "python developer",
+    "senior ansible development engineer",
+    "senior build and release engineer",
+    "senior build engineer",
+    "senior devops engineer",
+    "senior site reliability engineer",
+    "senior sre architect",
+    "senior sre engineer",
+    "site reliability engineer (kubernetes \u2013 docker)",
+    "splunk engineer",
+    "sre engineer"
+  ],
+  "infrastructure as code": [
+    "ansible automation engineer",
+    "ansible operations engineer",
+    "chef operations engineer",
+    "packer engineer",
+    "puppet engineer",
+    "puppet operations engineer",
+    "senior ansible development engineer"
+  ],
+  "automation": [
+    "ansible automation engineer",
+    "ansible operations engineer",
+    "aws devops engineer",
+    "azure devops engineer",
+    "bamboo engineer",
+    "build and release engineer",
+    "chef inspec engineer",
+    "chef operations engineer",
+    "cloud administrator",
+    "cloud architect",
+    "cloud automation engineer",
+    "cloud engineer",
+    "consul engineer",
+    "devops architect",
+    "devops engineer",
+    "devops manager",
+    "docker engineer",
+    "gcp devops engineer",
+    "gerrit administrator",
+    "gerrit engineer",
+    "git engineer",
+    "github engineer",
+    "gitlab engineer",
+    "groovy engineer",
+    "jenkins engineer",
+    "kubernetes administrator",
+    "kubernetes engineer",
+    "kubernetes operations engineer",
+    "network and systems administrator",
+    "nomad engineer",
+    "openshift engineer",
+    "openstack engineer",
+    "operations engineer",
+    "packer engineer",
+    "powershell engineer",
+    "production support engineer",
+    "puppet engineer",
+    "puppet operations engineer",
+    "senior ansible development engineer",
+    "senior build and release engineer",
+    "senior devops architect",
+    "senior devops engineer",
+    "senior site reliability engineer",
+    "senior sre architect",
+    "senior sre engineer",
+    "site reliability engineer (kubernetes \u2013 docker)",
+    "sre architect",
+    "sre engineer",
+    "udeploy engineer"
+  ],
+  "terraform": [
+    "ansible operations engineer",
+    "aws devops engineer",
+    "aws solutions architect",
+    "azure devops engineer",
+    "cloud architect",
+    "cloud automation engineer",
+    "devops architect",
+    "devops engineer",
+    "devsecops architect",
+    "devsecops engineer",
+    "gcp devops engineer",
+    "senior devops architect",
+    "senior devops engineer",
+    "senior devsecops architect",
+    "terraform engineer"
+  ],
+  "scripting": [
+    "ansible automation engineer",
+    "ansible operations engineer",
+    "aws devops engineer",
+    "azure devops engineer",
+    "bamboo engineer",
+    "build and release engineer",
+    "build engineer",
+    "cloud administrator",
+    "cloud automation engineer",
+    "cloud engineer",
+    "devops engineer",
+    "gcp devops engineer",
+    "gerrit administrator",
+    "gerrit engineer",
+    "git engineer",
+    "github engineer",
+    "gitlab engineer",
+    "groovy engineer",
+    "jenkins engineer",
+    "nagios engineer",
+    "network and systems administrator",
+    "octopus deploy engineer",
+    "openstack engineer",
+    "operations engineer",
+    "powershell engineer",
+    "production support engineer",
+    "senior ansible development engineer",
+    "senior build and release engineer",
+    "senior build engineer",
+    "splunk engineer",
+    "systems administrator"
+  ],
+  "python": [
+    "ansible automation engineer",
+    "ansible operations engineer",
+    "artificial intelligence researcher",
+    "big data engineer",
+    "cloud automation engineer",
+    "computer programmer",
+    "coverage.py engineer",
+    "data analyst",
+    "data analysts",
+    "data engineer",
+    "data scientist",
+    "developer",
+    "devops engineer",
+    "entry level developer",
+    "entry level programmer",
+    "entry level software developer",
+    "entry level software engineer",
+    "frameworks specialist",
+    "full stack developer",
+    "full stack python developer/programmer/engineer",
+    "jr developer",
+    "junior developer",
+    "junior software developer",
+    "junior software engineer",
+    "machine learning engineer",
+    "micro services / api lead designer",
+    "new grad software engineer",
+    "principle engineer in artificial intelligence",
+    "principle engineer in data analysis",
+    "principle engineer in machine learning",
+    "programmer",
+    "pytest engineer",
+    "python developer",
+    "qa engineer",
+    "robotics engineer",
+    "selenium engineer",
+    "senior ansible development engineer",
+    "senior devops engineer",
+    "senior site reliability engineer",
+    "senior sre architect",
+    "senior sre engineer",
+    "software developer",
+    "software engineer",
+    "sre engineer"
+  ],
+  "ansible": [
+    "ansible automation engineer",
+    "ansible operations engineer",
+    "aws devops engineer",
+    "azure devops engineer",
+    "cloud automation engineer",
+    "devops architect",
+    "devops engineer",
+    "devsecops architect",
+    "gcp devops engineer",
+    "senior ansible development engineer",
+    "senior devops architect",
+    "senior devops engineer",
+    "senior devsecops architect"
+  ],
+  "kubernetes": [
+    "ansible operations engineer",
+    "aws devops engineer",
+    "azure devops engineer",
+    "build and release engineer",
+    "cloud architect",
+    "devops architect",
+    "devops engineer",
+    "devsecops architect",
+    "devsecops engineer",
+    "docker engineer",
+    "envoy engineer",
+    "falco engineer",
+    "gcp devops engineer",
+    "istio engineer",
+    "jenkins engineer",
+    "kubernetes administrator",
+    "kubernetes engineer",
+    "kubernetes operations engineer",
+    "openshift engineer",
+    "prometheus engineer",
+    "senior build and release engineer",
+    "senior cloud architect",
+    "senior devops architect",
+    "senior devops engineer",
+    "senior devsecops architect",
+    "senior site reliability engineer",
+    "senior sre architect",
+    "senior sre engineer",
+    "site reliability engineer (kubernetes \u2013 docker)",
+    "sre architect",
+    "sre engineer"
+  ],
+  "gradle": [
+    "artifactory administrator",
+    "artifactory engineer",
+    "build and release engineer",
+    "build engineer",
+    "gradle engineer",
+    "nexus engineer",
+    "senior build and release engineer",
+    "senior build engineer"
+  ],
+  "jfrog cli": [
+    "artifactory administrator"
+  ],
+  "jenkins": [
+    "artifactory administrator",
+    "artifactory engineer",
+    "build and release engineer",
+    "build engineer",
+    "devops engineer",
+    "full stack java developer/programmer/engineer",
+    "groovy engineer",
+    "java developer",
+    "jenkins engineer",
+    "qa engineer",
+    "senior build and release engineer",
+    "senior build engineer",
+    "senior devops engineer",
+    "software engineer"
+  ],
+  "artifactory": [
+    "artifactory administrator",
+    "artifactory engineer"
+  ],
+  "build automation": [
+    "artifactory administrator",
+    "artifactory engineer",
+    "bamboo engineer",
+    "build engineer",
+    "gradle engineer",
+    "groovy engineer",
+    "jenkins engineer",
+    "maven engineer",
+    "nexus engineer",
+    "senior build engineer",
+    "teamcity engineer"
+  ],
+  "git": [
+    ".net developer",
+    "artifactory administrator",
+    "artifactory engineer",
+    "bamboo engineer",
+    "bitbucket engineer",
+    "build and release engineer",
+    "build engineer",
+    "c# developer",
+    "devops engineer",
+    "entry level developer",
+    "entry level software developer",
+    "entry level software engineer",
+    "entry level web developer",
+    "full stack java developer/programmer/engineer",
+    "full stack python developer/programmer/engineer",
+    "gerrit administrator",
+    "gerrit engineer",
+    "git engineer",
+    "github engineer",
+    "gitlab engineer",
+    "gradle engineer",
+    "java developer",
+    "jr developer",
+    "junior developer",
+    "junior front end developer",
+    "junior ios developer",
+    "junior software developer",
+    "junior software engineer",
+    "junior web developer",
+    "maven engineer",
+    "new grad software engineer",
+    "php developer",
+    "python developer",
+    "qa engineer",
+    "react developer",
+    "ruby on rails developer",
+    "senior build and release engineer",
+    "senior build engineer",
+    "senior devops engineer",
+    "software engineer",
+    "teamcity engineer"
+  ],
+  "maven": [
+    "artifactory administrator",
+    "artifactory engineer",
+    "build and release engineer",
+    "build engineer",
+    "full stack java developer/programmer/engineer",
+    "java developer",
+    "maven engineer",
+    "nexus engineer",
+    "senior build and release engineer",
+    "senior build engineer"
+  ],
+  "version control": [
+    "artifactory administrator",
+    "artifactory engineer",
+    "bamboo engineer",
+    "bitbucket engineer",
+    "build engineer",
+    "gerrit administrator",
+    "gerrit engineer",
+    "git engineer",
+    "github engineer",
+    "gitlab engineer",
+    "gradle engineer",
+    "jenkins engineer",
+    "maven engineer",
+    "senior build engineer",
+    "teamcity engineer",
+    "udeploy engineer",
+    "xl deploy engineer"
+  ],
+  "": [
+    "artificial intelligence / machine learning engineer",
+    "twistkock engineer"
+  ],
+  "machine learning": [
+    "artificial intelligence / machine learning leader",
+    "artificial intelligence / machine learning sr.leader",
+    "artificial intelligence architect",
+    "artificial intelligence researcher",
+    "computer research scientist",
+    "data scientist",
+    "machine learning architect",
+    "machine learning engineer",
+    "principle engineer in artificial intelligence",
+    "principle engineer in machine learning"
+  ],
+  "team management": [
+    "artificial intelligence / machine learning leader",
+    "artificial intelligence / machine learning sr.leader",
+    "devops manager",
+    "director of engineering"
+  ],
+  "communication": [
+    "agile project manager",
+    "artificial intelligence / machine learning leader",
+    "artificial intelligence / machine learning sr.leader",
+    "devops manager",
+    "director of engineering",
+    "product manager"
+  ],
+  "data science": [
+    "artificial intelligence / machine learning leader",
+    "artificial intelligence / machine learning sr.leader",
+    "artificial intelligence architect",
+    "data scientist",
+    "machine learning architect",
+    "machine learning engineer",
+    "principle engineer in artificial intelligence"
+  ],
+  "project management": [
+    "agile project manager",
+    "artificial intelligence / machine learning leader",
+    "artificial intelligence / machine learning sr.leader",
+    "devops manager",
+    "director of engineering",
+    "it manager",
+    "jira administrator",
+    "jira engineer",
+    "technical account manager",
+    "technical lead"
+  ],
+  "budgeting": [
+    "artificial intelligence / machine learning leader",
+    "artificial intelligence / machine learning sr.leader",
+    "devops manager",
+    "director of engineering",
+    "it manager"
+  ],
+  "deep learning": [
+    "artificial intelligence / machine learning leader",
+    "artificial intelligence / machine learning sr.leader",
+    "artificial intelligence architect",
+    "artificial intelligence researcher",
+    "machine learning architect",
+    "machine learning engineer",
+    "principle engineer in artificial intelligence",
+    "principle engineer in machine learning"
+  ],
+  "ai strategy": [
+    "artificial intelligence / machine learning leader",
+    "artificial intelligence / machine learning sr.leader",
+    "principle engineer in artificial intelligence"
+  ],
+  "stakeholder management": [
+    "agile project manager",
+    "artificial intelligence / machine learning leader",
+    "artificial intelligence / machine learning sr.leader",
+    "business systems analyst",
+    "computer systems analyst",
+    "product manager"
+  ],
+  "innovation": [
+    "artificial intelligence / machine learning sr.leader",
+    "principle engineer in artificial intelligence",
+    "principle engineer in big data",
+    "principle engineer in data analysis",
+    "principle engineer in machine learning"
+  ],
+  "mentoring": [
+    "artificial intelligence / machine learning sr.leader",
+    "principle engineer in artificial intelligence",
+    "principle engineer in big data",
+    "principle engineer in data analysis",
+    "principle engineer in machine learning",
+    "senior build and release engineer",
+    "senior build engineer"
+  ],
+  "system design": [
+    "artificial intelligence architect",
+    "machine learning architect",
+    "principle engineer in artificial intelligence"
+  ],
+  "model deployment": [
+    "artificial intelligence architect",
+    "machine learning architect",
+    "principle engineer in machine learning"
+  ],
+  "scalability": [
+    "artificial intelligence architect",
+    "machine learning architect"
+  ],
+  "ai architecture": [
+    "artificial intelligence architect"
+  ],
+  "pytorch": [
+    "artificial intelligence researcher",
+    "machine learning engineer"
+  ],
+  "research methods": [
+    "artificial intelligence researcher",
+    "computer research scientist"
+  ],
+  "statistical analysis": [
+    "artificial intelligence researcher",
+    "big data specialist"
+  ],
+  "data analysis": [
+    "artificial intelligence researcher",
+    "big data specialist",
+    "business systems analyst",
+    "computer research scientist",
+    "computer systems analyst",
+    "machine learning engineer",
+    "principle engineer in data analysis",
+    "programmer analyst",
+    "splunk engineer"
+  ],
+  "tensorflow": [
+    "artificial intelligence researcher",
+    "machine learning engineer",
+    "principle engineer in artificial intelligence",
+    "principle engineer in machine learning"
+  ],
+  "algorithm design": [
+    "artificial intelligence researcher"
+  ],
+  "scientific writing": [
+    "artificial intelligence researcher",
+    "computer research scientist"
+  ],
+  "kafka": [
+    "big data architect",
+    "big data engineer",
+    "principle engineer in big data"
+  ],
+  "sql": [
+    "android developer",
+    "big data engineer",
+    "big data specialist",
+    "business systems analyst",
+    "computer systems analyst",
+    "data analyst",
+    "data analysts",
+    "data architect",
+    "data engineer",
+    "data modeler",
+    "data scientist",
+    "database administrator",
+    "entry level developer",
+    "entry level software developer",
+    "entry level software engineer",
+    "full stack developer",
+    "full stack java developer/programmer/engineer",
+    "full stack python developer/programmer/engineer",
+    "ios developer",
+    "java developer",
+    "jr developer",
+    "junior developer",
+    "junior software developer",
+    "junior software engineer",
+    "new grad software engineer",
+    "oracle developer",
+    "oracle sql developer",
+    "principle engineer in data analysis",
+    "programmer analyst",
+    "python developer",
+    "ruby on rails developer",
+    "sql developer"
+  ],
+  "scala": [
+    "big data engineer"
+  ],
+  "data pipelines": [
+    "big data engineer",
+    "data engineer"
+  ],
+  "java": [
+    "android developer",
+    "appdynamics engineer",
+    "big data engineer",
+    "computer programmer",
+    "developer",
+    "entry level developer",
+    "entry level programmer",
+    "entry level software developer",
+    "entry level software engineer",
+    "fortify engineer",
+    "frameworks specialist",
+    "full stack java developer/programmer/engineer",
+    "gradle engineer",
+    "groovy engineer",
+    "jacoco engineer",
+    "java developer",
+    "jr developer",
+    "junior developer",
+    "junior software developer",
+    "junior software engineer",
+    "junit engineer",
+    "maven engineer",
+    "micro services / api lead designer",
+    "mobile app developer",
+    "mobile application developer",
+    "mulesoft developer",
+    "new grad software engineer",
+    "new relic engineer",
+    "programmer",
+    "selenium engineer",
+    "software developer",
+    "software engineer",
+    "sonarqube engineer"
+  ],
+  "data visualization": [
+    "big data specialist",
+    "data analyst",
+    "data analysts",
+    "data scientist",
+    "elk engineer",
+    "grafana engineer",
+    "principle engineer in data analysis"
+  ],
+  "data mining": [
+    "big data specialist",
+    "data analyst",
+    "data analysts"
+  ],
+  "build tools": [
+    "build and release engineer",
+    "senior build and release engineer"
+  ],
+  "ant": [
+    "build engineer",
+    "senior build engineer"
+  ],
+  "ruby": [
+    "chef operations engineer",
+    "puppet engineer",
+    "puppet operations engineer",
+    "ruby on rails developer"
+  ],
+  "chef": [
+    "chef operations engineer"
+  ],
+  "configuration management": [
+    "chef inspec engineer",
+    "chef operations engineer",
+    "consul engineer",
+    "puppet engineer",
+    "puppet operations engineer"
+  ],
+  "statistics": [
+    "data analyst",
+    "data analysts",
+    "data scientist",
+    "principle engineer in data analysis"
+  ],
+  "excel": [
+    "data analyst",
+    "data analysts"
+  ],
+  "data cleansing": [
+    "data analyst",
+    "data analysts"
+  ],
+  "r": [
+    "data analyst",
+    "data analysts",
+    "data scientist"
+  ],
+  "power bi": [
+    "data analyst",
+    "data analysts"
+  ],
+  "tableau": [
+    "data analyst",
+    "data analysts"
+  ],
+  "data integration": [
+    "data architect"
+  ],
+  "data security": [
+    "data architect"
+  ],
+  "google cloud": [
+    "cloud administrator",
+    "cloud architect",
+    "cloud automation engineer",
+    "cloud engineer",
+    "cloud network engineer",
+    "devops architect",
+    "gcp devops engineer",
+    "packer engineer",
+    "senior cloud architect",
+    "senior devops architect",
+    "terraform engineer"
+  ],
+  "log management": [
+    "elk engineer",
+    "fluentd engineer",
+    "splunk engineer"
+  ],
+  "logstash": [
+    "elk engineer"
+  ],
+  "elasticsearch": [
+    "elk engineer",
+    "fluentd engineer"
+  ],
+  "kibana": [
+    "elk engineer",
+    "fluentd engineer"
+  ],
+  "code review": [
+    "bitbucket engineer",
+    "gerrit administrator",
+    "gerrit engineer",
+    "git engineer"
+  ],
+  "gerrit": [
+    "gerrit administrator",
+    "gerrit engineer"
+  ],
+  "groovy": [
+    "gradle engineer",
+    "groovy engineer",
+    "jenkins engineer"
+  ],
+  "atlassian suite": [
+    "bamboo engineer",
+    "bitbucket engineer",
+    "confluence engineer",
+    "jira administrator",
+    "jira engineer"
+  ],
+  "user management": [
+    "confluence engineer",
+    "jira administrator",
+    "jira engineer"
+  ],
+  "workflow configuration": [
+    "confluence engineer",
+    "jira administrator",
+    "jira engineer"
+  ],
+  "agile methodologies": [
+    "agile project manager",
+    "director of engineering",
+    "it manager",
+    "jira administrator",
+    "jira engineer",
+    "product manager",
+    "technical lead"
+  ],
+  "jira": [
+    "agile project manager",
+    "jira administrator",
+    "jira engineer"
+  ],
+  "keras": [
+    "machine learning engineer"
+  ],
+  "computer vision": [
+    "machine learning engineer"
+  ],
+  "natural language processing": [
+    "machine learning engineer"
+  ],
+  "algorithms": [
+    "coder",
+    "computer programmer",
+    "computer research scientist",
+    "developer",
+    "entry level developer",
+    "entry level programmer",
+    "entry level software developer",
+    "entry level software engineer",
+    "full stack python developer/programmer/engineer",
+    "jr developer",
+    "junior developer",
+    "junior software developer",
+    "junior software engineer",
+    "machine learning engineer",
+    "new grad software engineer",
+    "programmer",
+    "python developer",
+    "software developer",
+    "software engineer"
+  ],
+  "system administration": [
+    "nagios engineer",
+    "network and systems administrator",
+    "operations engineer"
+  ],
+  "monitoring": [
+    "datadog engineer",
+    "grafana engineer",
+    "nagios engineer",
+    "operations engineer",
+    "production support engineer",
+    "prometheus engineer",
+    "senior site reliability engineer",
+    "senior sre architect",
+    "senior sre engineer",
+    "site reliability engineer (kubernetes \u2013 docker)",
+    "sre architect",
+    "sre engineer"
+  ],
+  "windows server": [
+    "entry level network engineer",
+    "network and systems administrator",
+    "operations engineer",
+    "powershell engineer",
+    "production support engineer"
+  ],
+  "troubleshooting": [
+    "appdynamics engineer",
+    "datadog engineer",
+    "entry level network engineer",
+    "network and systems administrator",
+    "new relic engineer",
+    "operations engineer",
+    "production support engineer",
+    "site reliability engineer (kubernetes \u2013 docker)",
+    "systems administrator"
+  ],
+  "itil": [
+    "production support engineer"
+  ],
+  "databases": [
+    "production support engineer"
+  ],
+  "puppet": [
+    "puppet engineer",
+    "puppet operations engineer"
+  ],
+  "leadership": [
+    "devops manager",
+    "director of engineering",
+    "senior ansible development engineer",
+    "senior build and release engineer",
+    "senior build engineer",
+    "senior cloud architect",
+    "senior devops architect",
+    "senior devops engineer",
+    "senior devsecops architect",
+    "senior site reliability engineer",
+    "senior sre architect",
+    "senior sre engineer"
+  ],
+  "sre": [
+    "senior site reliability engineer",
+    "senior sre architect",
+    "senior sre engineer",
+    "site reliability engineer (kubernetes \u2013 docker)",
+    "sre architect",
+    "sre engineer"
+  ],
+  "devops": [
+    "aws devops engineer",
+    "aws solutions architect",
+    "azure devops engineer",
+    "devops manager",
+    "full stack developer",
+    "gcp devops engineer",
+    "senior site reliability engineer",
+    "senior sre architect",
+    "senior sre engineer",
+    "sre engineer"
+  ],
+  "dashboards": [
+    "datadog engineer",
+    "grafana engineer",
+    "splunk engineer"
+  ],
+  "splunk": [
+    "splunk engineer"
+  ],
+  "alerting": [
+    "appdynamics engineer",
+    "datadog engineer",
+    "grafana engineer",
+    "nagios engineer",
+    "new relic engineer",
+    "prometheus engineer",
+    "splunk engineer"
+  ],
+  "mvc": [
+    ".net developer",
+    "c# developer"
+  ],
+  "asp.net": [
+    ".net developer",
+    "c# developer"
+  ],
+  "web api": [
+    ".net developer",
+    "c# developer"
+  ],
+  ".net": [
+    ".net developer",
+    "appdynamics engineer",
+    "c# developer",
+    "fortify engineer",
+    "new relic engineer",
+    "octopus deploy engineer",
+    "sharepoint developer",
+    "sonarqube engineer"
+  ],
+  "linq": [
+    ".net developer",
+    "c# developer"
+  ],
+  "c#": [
+    ".net developer",
+    "c# developer",
+    "game developer",
+    "sharepoint developer",
+    "unity developer"
+  ],
+  "entity framework": [
+    ".net developer",
+    "c# developer"
+  ],
+  "sql server": [
+    ".net developer",
+    "c# developer",
+    "sql developer"
+  ],
+  "css": [
+    "accessibility specialist",
+    "entry level developer",
+    "entry level software developer",
+    "entry level software engineer",
+    "entry level web developer",
+    "front end developer",
+    "front end web developer",
+    "full stack developer",
+    "full stack java developer/programmer/engineer",
+    "full stack python developer/programmer/engineer",
+    "javascript developer",
+    "jr developer",
+    "junior developer",
+    "junior front end developer",
+    "junior software developer",
+    "junior software engineer",
+    "junior web developer",
+    "new grad software engineer",
+    "php developer",
+    "react developer",
+    "ruby on rails developer"
+  ],
+  "assistive technologies": [
+    "accessibility specialist"
+  ],
+  "accessibility testing": [
+    "accessibility specialist"
+  ],
+  "html": [
+    "accessibility specialist",
+    "entry level developer",
+    "entry level software developer",
+    "entry level software engineer",
+    "entry level web developer",
+    "front end developer",
+    "front end web developer",
+    "full stack developer",
+    "full stack java developer/programmer/engineer",
+    "full stack python developer/programmer/engineer",
+    "javascript developer",
+    "jr developer",
+    "junior developer",
+    "junior front end developer",
+    "junior software developer",
+    "junior software engineer",
+    "junior web developer",
+    "new grad software engineer",
+    "php developer",
+    "react developer",
+    "ruby on rails developer"
+  ],
+  "javascript": [
+    "accessibility specialist",
+    "blockchain developer",
+    "entry level developer",
+    "entry level software developer",
+    "entry level software engineer",
+    "entry level web developer",
+    "frameworks specialist",
+    "front end developer",
+    "front end web developer",
+    "full stack developer",
+    "full stack java developer/programmer/engineer",
+    "full stack python developer/programmer/engineer",
+    "game developer",
+    "javascript developer",
+    "jr developer",
+    "junior developer",
+    "junior front end developer",
+    "junior software developer",
+    "junior software engineer",
+    "junior web developer",
+    "new grad software engineer",
+    "php developer",
+    "react developer",
+    "ruby on rails developer",
+    "sharepoint developer",
+    "ui developer",
+    "web developer",
+    "wordpress developer"
+  ],
+  "ui/ux": [
+    "accessibility specialist"
+  ],
+  "ada compliance": [
+    "accessibility specialist"
+  ],
+  "aria": [
+    "accessibility specialist"
+  ],
+  "wcag": [
+    "accessibility specialist"
+  ],
+  "kanban": [
+    "agile project manager"
+  ],
+  "confluence": [
+    "agile project manager",
+    "confluence engineer"
+  ],
+  "scrum": [
+    "agile project manager"
+  ],
+  "mobile development": [
+    "android developer",
+    "ios developer",
+    "mobile app developer",
+    "mobile application developer"
+  ],
+  "rest apis": [
+    "android developer",
+    "full stack java developer/programmer/engineer",
+    "full stack python developer/programmer/engineer",
+    "ios developer",
+    "java developer",
+    "micro services / api lead designer",
+    "mulesoft developer",
+    "python developer",
+    "ruby on rails developer",
+    "salesforce developer",
+    "sharepoint developer"
+  ],
+  "ui/ux design": [
+    "android developer",
+    "front end developer",
+    "front end web developer",
+    "information architect",
+    "interaction designer",
+    "ios developer",
+    "javascript developer",
+    "mobile app developer",
+    "mobile application developer",
+    "react developer",
+    "web designer (ui/ux designer)"
+  ],
+  "android sdk": [
+    "android developer",
+    "mobile app developer",
+    "mobile application developer"
+  ],
+  "firebase": [
+    "android developer"
+  ],
+  "android studio": [
+    "android developer"
+  ],
+  "kotlin": [
+    "android developer",
+    "mobile app developer",
+    "mobile application developer"
+  ],
+  "metrics": [
+    "appdynamics engineer",
+    "datadog engineer",
+    "grafana engineer",
+    "new relic engineer",
+    "prometheus engineer"
+  ],
+  "appdynamics": [
+    "appdynamics engineer"
+  ],
+  "application performance monitoring": [
+    "appdynamics engineer",
+    "new relic engineer"
+  ],
+  "sast": [
+    "application security engineer"
+  ],
+  "application security": [
+    "application security engineer"
+  ],
+  "dast": [
+    "application security engineer"
+  ],
+  "vulnerability management": [
+    "application security engineer",
+    "cloud security engineer",
+    "devsecops architect",
+    "fortify engineer",
+    "information security analyst",
+    "security specialist",
+    "senior devsecops architect"
+  ],
+  "secure coding": [
+    "application security engineer"
+  ],
+  "cloud security": [
+    "application security engineer",
+    "aws solutions architect",
+    "cloud architect",
+    "cloud security engineer",
+    "devsecops architect",
+    "devsecops engineer",
+    "senior devsecops architect",
+    "vault engineer"
+  ],
+  "penetration testing": [
+    "application security engineer",
+    "devsecops engineer",
+    "information security analyst",
+    "security specialist"
+  ],
+  "owasp": [
+    "application security engineer"
+  ],
+  "cloudformation": [
+    "aws devops engineer",
+    "aws solutions architect"
+  ],
+  "ec2": [
+    "aws solutions architect"
+  ],
+  "aws lambda": [
+    "aws solutions architect"
+  ],
+  "s3": [
+    "aws solutions architect"
+  ],
+  "cloud architecture": [
+    "aws solutions architect",
+    "cloud architect",
+    "senior cloud architect",
+    "sre architect"
+  ],
+  "arm templates": [
+    "azure devops engineer"
+  ],
+  "bamboo": [
+    "bamboo engineer"
+  ],
+  "branching strategies": [
+    "bitbucket engineer",
+    "git engineer"
+  ],
+  "bitbucket": [
+    "bitbucket engineer"
+  ],
+  "blockchain": [
+    "blockchain developer"
+  ],
+  "web3": [
+    "blockchain developer"
+  ],
+  "consensus algorithms": [
+    "blockchain developer"
+  ],
+  "smart contracts": [
+    "blockchain developer"
+  ],
+  "distributed ledger": [
+    "blockchain developer"
+  ],
+  "cryptocurrency": [
+    "blockchain developer"
+  ],
+  "node.js": [
+    "blockchain developer",
+    "front end developer",
+    "front end web developer",
+    "full stack developer",
+    "javascript developer",
+    "react developer",
+    "web developer"
+  ],
+  "solidity": [
+    "blockchain developer"
+  ],
+  "ethereum": [
+    "blockchain developer"
+  ],
+  "business analysis": [
+    "business systems analyst"
+  ],
+  "bpmn": [
+    "business systems analyst"
+  ],
+  "process improvement": [
+    "business systems analyst",
+    "computer systems analyst",
+    "programmer analyst"
+  ],
+  "uml": [
+    "business systems analyst",
+    "computer systems analyst"
+  ],
+  "requirements gathering": [
+    "business systems analyst",
+    "computer systems analyst",
+    "programmer analyst"
+  ],
+  "compliance as code": [
+    "chef inspec engineer"
+  ],
+  "chef inspec": [
+    "chef inspec engineer"
+  ],
+  "virtualization": [
+    "cloud administrator",
+    "cloud engineer",
+    "openstack engineer",
+    "systems administrator"
+  ],
+  "microservices": [
+    "cloud architect",
+    "full stack java developer/programmer/engineer",
+    "java developer",
+    "micro services / api lead designer",
+    "senior cloud architect"
+  ],
+  "vpc": [
+    "cloud network engineer"
+  ],
+  "cloud networking": [
+    "cloud network engineer",
+    "computer network architect"
+  ],
+  "security groups": [
+    "cloud network engineer"
+  ],
+  "subnets": [
+    "cloud network engineer"
+  ],
+  "routing": [
+    "cloud network engineer",
+    "computer network architect",
+    "entry level network engineer",
+    "network engineer"
+  ],
+  "firewalls": [
+    "cloud network engineer",
+    "computer network architect",
+    "information security analyst",
+    "network engineer",
+    "security specialist"
+  ],
+  "iam": [
+    "cloud security engineer"
+  ],
+  "identity and access management": [
+    "cloud security engineer"
+  ],
+  "gcp": [
+    "cloud security engineer"
+  ],
+  "compliance": [
+    "cloud security engineer"
+  ],
+  "encryption": [
+    "cloud security engineer",
+    "vault engineer"
+  ],
+  "toolpath optimization": [
+    "cnc programmer"
+  ],
+  "cnc programming": [
+    "cnc programmer"
+  ],
+  "cad/cam": [
+    "cnc programmer"
+  ],
+  "machining": [
+    "cnc programmer"
+  ],
+  "manufacturing processes": [
+    "cnc programmer"
+  ],
+  "blueprints": [
+    "cnc programmer"
+  ],
+  "g-code": [
+    "cnc programmer"
+  ],
+  "data structures": [
+    "coder",
+    "computer programmer",
+    "developer",
+    "entry level developer",
+    "entry level programmer",
+    "entry level software developer",
+    "entry level software engineer",
+    "full stack python developer/programmer/engineer",
+    "jr developer",
+    "junior developer",
+    "junior software developer",
+    "junior software engineer",
+    "new grad software engineer",
+    "programmer",
+    "python developer",
+    "software developer",
+    "software engineer"
+  ],
+  "programming": [
+    "coder",
+    "computer programmer",
+    "computer research scientist",
+    "developer",
+    "entry level programmer",
+    "programmer",
+    "programmer analyst",
+    "software developer"
+  ],
+  "debugging": [
+    "coder",
+    "computer programmer",
+    "developer",
+    "entry level programmer",
+    "programmer",
+    "software developer"
+  ],
+  "software development": [
+    "coder",
+    "computer programmer",
+    "developer",
+    "director of engineering",
+    "fortify engineer",
+    "programmer",
+    "software developer"
+  ],
+  "problem solving": [
+    "coder"
+  ],
+  "2d animation": [
+    "computer graphics animator"
+  ],
+  "motion graphics": [
+    "computer graphics animator"
+  ],
+  "adobe creative suite": [
+    "computer graphics animator",
+    "ui designer",
+    "web designer (ui/ux designer)"
+  ],
+  "storyboarding": [
+    "computer graphics animator"
+  ],
+  "maya": [
+    "computer graphics animator"
+  ],
+  "3d animation": [
+    "computer graphics animator"
+  ],
+  "visual effects": [
+    "computer graphics animator"
+  ],
+  "blender": [
+    "computer graphics animator"
+  ],
+  "pcb design": [
+    "computer hardware engineer"
+  ],
+  "microprocessors": [
+    "computer hardware engineer"
+  ],
+  "circuit design": [
+    "computer hardware engineer"
+  ],
+  "validation": [
+    "computer hardware engineer"
+  ],
+  "hardware design": [
+    "computer hardware engineer",
+    "embedded software engineer"
+  ],
+  "testing": [
+    "computer hardware engineer",
+    "coverage.py engineer",
+    "embedded software engineer",
+    "jacoco engineer",
+    "junit engineer",
+    "pytest engineer"
+  ],
+  "embedded systems": [
+    "computer hardware engineer",
+    "robotics engineer"
+  ],
+  "vpn": [
+    "computer network architect",
+    "network engineer"
+  ],
+  "lan/wan": [
+    "computer network architect",
+    "network engineer"
+  ],
+  "network design": [
+    "computer network architect"
+  ],
+  "switching": [
+    "computer network architect",
+    "entry level network engineer",
+    "network engineer"
+  ],
+  "tcp/ip": [
+    "computer network architect",
+    "entry level network engineer",
+    "network engineer"
+  ],
+  "c++": [
+    "computer programmer",
+    "developer",
+    "entry level programmer",
+    "game developer",
+    "programmer",
+    "robotics engineer",
+    "software developer",
+    "software engineer"
+  ],
+  "publications": [
+    "computer research scientist"
+  ],
+  "system analysis": [
+    "computer systems analyst"
+  ],
+  "documentation": [
+    "confluence engineer"
+  ],
+  "collaboration": [
+    "confluence engineer"
+  ],
+  "consul": [
+    "consul engineer"
+  ],
+  "service discovery": [
+    "consul engineer"
+  ],
+  "code coverage": [
+    "coverage.py engineer",
+    "jacoco engineer"
+  ],
+  "coverage.py": [
+    "coverage.py engineer"
+  ],
+  "quality assurance": [
+    "coverage.py engineer",
+    "jacoco engineer"
+  ],
+  "database design": [
+    "data modeler",
+    "database administrator",
+    "oracle developer",
+    "sql developer"
+  ],
+  "er diagrams": [
+    "data modeler"
+  ],
+  "data wrangling": [
+    "data scientist"
+  ],
+  "postgresql": [
+    "database administrator"
+  ],
+  "performance tuning": [
+    "database administrator",
+    "oracle developer",
+    "oracle sql developer",
+    "sql developer"
+  ],
+  "database management": [
+    "database administrator"
+  ],
+  "mysql": [
+    "database administrator",
+    "php developer",
+    "wordpress developer"
+  ],
+  "backup and recovery": [
+    "database administrator"
+  ],
+  "oracle": [
+    "database administrator",
+    "oracle developer"
+  ],
+  "datadog": [
+    "datadog engineer"
+  ],
+  "devsecops": [
+    "devsecops architect",
+    "devsecops engineer",
+    "senior devsecops architect"
+  ],
+  "security automation": [
+    "devsecops architect",
+    "senior devsecops architect"
+  ],
+  "vulnerability scanning": [
+    "devsecops engineer"
+  ],
+  "continuous security": [
+    "devsecops engineer"
+  ],
+  "containerization": [
+    "docker engineer"
+  ],
+  "communication protocols": [
+    "embedded software engineer"
+  ],
+  "firmware development": [
+    "embedded software engineer"
+  ],
+  "rtos": [
+    "embedded software engineer"
+  ],
+  "embedded c": [
+    "embedded software engineer"
+  ],
+  "microcontrollers": [
+    "embedded software engineer"
+  ],
+  "web development fundamentals": [
+    "entry level web developer",
+    "junior web developer"
+  ],
+  "ui/ux basics": [
+    "entry level web developer",
+    "junior front end developer",
+    "junior ios developer",
+    "junior web developer"
+  ],
+  "traffic management": [
+    "envoy engineer",
+    "istio engineer"
+  ],
+  "envoy": [
+    "envoy engineer"
+  ],
+  "service mesh": [
+    "envoy engineer",
+    "istio engineer"
+  ],
+  "threat detection": [
+    "falco engineer",
+    "splunk enterprise security engineer"
+  ],
+  "system monitoring": [
+    "falco engineer"
+  ],
+  "falco": [
+    "falco engineer"
+  ],
+  "fluentd": [
+    "fluentd engineer"
+  ],
+  "data processing": [
+    "fluentd engineer"
+  ],
+  "data collection": [
+    "fluentd engineer"
+  ],
+  "fortify": [
+    "fortify engineer"
+  ],
+  "static code analysis": [
+    "fortify engineer",
+    "sonarqube engineer"
+  ],
+  "django": [
+    "frameworks specialist",
+    "full stack developer",
+    "full stack python developer/programmer/engineer",
+    "python developer"
+  ],
+  "vue.js": [
+    "frameworks specialist",
+    "front end developer",
+    "front end web developer",
+    "javascript developer",
+    "junior front end developer"
+  ],
+  "react": [
+    "frameworks specialist",
+    "front end developer",
+    "front end web developer",
+    "full stack developer",
+    "full stack java developer/programmer/engineer",
+    "full stack python developer/programmer/engineer",
+    "javascript developer",
+    "junior front end developer",
+    "react developer",
+    "web developer"
+  ],
+  "spring framework": [
+    "frameworks specialist",
+    "full stack java developer/programmer/engineer",
+    "java developer"
+  ],
+  "angular": [
+    "frameworks specialist",
+    "front end developer",
+    "front end web developer",
+    "full stack developer",
+    "javascript developer"
+  ],
+  "framework development": [
+    "frameworks specialist"
+  ],
+  "typescript": [
+    "front end developer",
+    "front end web developer",
+    "javascript developer"
+  ],
+  "sass": [
+    "front end developer",
+    "front end web developer",
+    "javascript developer"
+  ],
+  "mongodb": [
+    "full stack developer"
+  ],
+  "express.js": [
+    "full stack developer"
+  ],
+  "junit": [
+    "full stack java developer/programmer/engineer",
+    "java developer",
+    "junit engineer",
+    "qa engineer"
+  ],
+  "hibernate": [
+    "full stack java developer/programmer/engineer",
+    "java developer"
+  ],
+  "j2ee": [
+    "full stack java developer/programmer/engineer",
+    "java developer"
+  ],
+  "flask": [
+    "full stack python developer/programmer/engineer",
+    "python developer"
+  ],
+  "unity": [
+    "game developer"
+  ],
+  "vr development": [
+    "game developer"
+  ],
+  "game design": [
+    "game developer"
+  ],
+  "game engines": [
+    "game developer"
+  ],
+  "unreal engine": [
+    "game developer"
+  ],
+  "github": [
+    "github engineer"
+  ],
+  "github actions": [
+    "github engineer"
+  ],
+  "gitlab": [
+    "gitlab engineer"
+  ],
+  "gitlab ci": [
+    "gitlab engineer"
+  ],
+  "grafana": [
+    "grafana engineer"
+  ],
+  "content strategy": [
+    "information architect"
+  ],
+  "information architecture": [
+    "information architect"
+  ],
+  "wireframing": [
+    "information architect",
+    "interaction designer",
+    "ui designer",
+    "ux designer",
+    "web designer (ui/ux designer)"
+  ],
+  "prototyping": [
+    "information architect",
+    "interaction designer",
+    "ui designer",
+    "ux designer",
+    "web designer (ui/ux designer)"
+  ],
+  "user research": [
+    "information architect",
+    "interaction designer",
+    "product manager",
+    "ux designer"
+  ],
+  "ids/ips": [
+    "information security analyst",
+    "security specialist"
+  ],
+  "network security": [
+    "information security analyst",
+    "security specialist"
+  ],
+  "security auditing": [
+    "information security analyst",
+    "security specialist"
+  ],
+  "usability testing": [
+    "interaction designer",
+    "ux designer"
+  ],
+  "interaction design": [
+    "interaction designer",
+    "ux designer"
+  ],
+  "ios sdk": [
+    "ios developer",
+    "junior ios developer"
+  ],
+  "xcode": [
+    "ios developer",
+    "junior ios developer"
+  ],
+  "objective-c": [
+    "ios developer",
+    "junior ios developer",
+    "mobile app developer",
+    "mobile application developer"
+  ],
+  "swift": [
+    "ios developer",
+    "junior ios developer",
+    "mobile app developer",
+    "mobile application developer"
+  ],
+  "istio": [
+    "istio engineer"
+  ],
+  "team leadership": [
+    "it manager",
+    "technical lead"
+  ],
+  "it infrastructure": [
+    "it manager"
+  ],
+  "cybersecurity": [
+    "it manager"
+  ],
+  "jacoco": [
+    "jacoco engineer"
+  ],
+  "unit testing": [
+    "junit engineer",
+    "pytest engineer"
+  ],
+  "test automation": [
+    "junit engineer",
+    "pytest engineer",
+    "qa engineer",
+    "selenium engineer"
+  ],
+  "dependency management": [
+    "maven engineer"
+  ],
+  "soa": [
+    "micro services / api lead designer",
+    "mulesoft developer"
+  ],
+  "api design": [
+    "micro services / api lead designer"
+  ],
+  "flutter": [
+    "mobile app developer",
+    "mobile application developer"
+  ],
+  "ios": [
+    "mobile app developer",
+    "mobile application developer"
+  ],
+  "react native": [
+    "mobile app developer",
+    "mobile application developer"
+  ],
+  "anypoint platform": [
+    "mulesoft developer"
+  ],
+  "integration": [
+    "mulesoft developer"
+  ],
+  "api development": [
+    "mulesoft developer"
+  ],
+  "mulesoft": [
+    "mulesoft developer"
+  ],
+  "nagios": [
+    "nagios engineer"
+  ],
+  "cisco": [
+    "network engineer"
+  ],
+  "networking protocols": [
+    "network engineer"
+  ],
+  "new relic": [
+    "new relic engineer"
+  ],
+  "nexus": [
+    "nexus engineer"
+  ],
+  "artifact repository": [
+    "nexus engineer"
+  ],
+  "container orchestration": [
+    "nomad engineer"
+  ],
+  "nomad": [
+    "nomad engineer"
+  ],
+  "cryptography": [
+    "notary engineer"
+  ],
+  "notary": [
+    "notary engineer"
+  ],
+  "container security": [
+    "notary engineer"
+  ],
+  "trust management": [
+    "notary engineer"
+  ],
+  "powershell": [
+    "octopus deploy engineer",
+    "powershell engineer",
+    "sharepoint developer"
+  ],
+  "octopus deploy": [
+    "octopus deploy engineer"
+  ],
+  "deployment automation": [
+    "octopus deploy engineer",
+    "xl deploy engineer"
+  ],
+  "openshift": [
+    "openshift engineer"
+  ],
+  "openstack": [
+    "openstack engineer"
+  ],
+  "pl/sql": [
+    "oracle developer",
+    "oracle sql developer"
+  ],
+  "oracle sql developer": [
+    "oracle sql developer"
+  ],
+  "database development": [
+    "oracle sql developer"
+  ],
+  "packer": [
+    "packer engineer"
+  ],
+  "php": [
+    "php developer",
+    "web developer",
+    "wordpress developer"
+  ],
+  "laravel": [
+    "php developer"
+  ],
+  "restful apis": [
+    "php developer"
+  ],
+  "symfony": [
+    "php developer"
+  ],
+  "active directory": [
+    "powershell engineer"
+  ],
+  "product management": [
+    "product manager"
+  ],
+  "roadmap planning": [
+    "product manager"
+  ],
+  "prometheus": [
+    "prometheus engineer"
+  ],
+  "pytest": [
+    "pytest engineer"
+  ],
+  "selenium": [
+    "qa engineer",
+    "selenium engineer"
+  ],
+  "testng": [
+    "qa engineer"
+  ],
+  "performance testing": [
+    "qa engineer"
+  ],
+  "agile testing": [
+    "qa engineer"
+  ],
+  "automation testing": [
+    "qa engineer"
+  ],
+  "redux": [
+    "react developer"
+  ],
+  "robotics": [
+    "robotics engineer"
+  ],
+  "ros": [
+    "robotics engineer"
+  ],
+  "control systems": [
+    "robotics engineer"
+  ],
+  "actuators": [
+    "robotics engineer"
+  ],
+  "sensors": [
+    "robotics engineer"
+  ],
+  "ruby on rails": [
+    "ruby on rails developer"
+  ],
+  "soql": [
+    "salesforce developer"
+  ],
+  "visualforce": [
+    "salesforce developer"
+  ],
+  "lightning": [
+    "salesforce developer"
+  ],
+  "salesforce": [
+    "salesforce developer"
+  ],
+  "salesforce administration": [
+    "salesforce developer"
+  ],
+  "apex": [
+    "salesforce developer"
+  ],
+  "off-page optimization": [
+    "search engine optimization"
+  ],
+  "seo": [
+    "search engine optimization"
+  ],
+  "content marketing": [
+    "search engine optimization"
+  ],
+  "on-page optimization": [
+    "search engine optimization"
+  ],
+  "keyword research": [
+    "search engine optimization"
+  ],
+  "analytics": [
+    "search engine optimization"
+  ],
+  "webdriver": [
+    "selenium engineer"
+  ],
+  "testing frameworks": [
+    "selenium engineer"
+  ],
+  "sharepoint": [
+    "sharepoint developer"
+  ],
+  "sharepoint framework": [
+    "sharepoint developer"
+  ],
+  "software design": [
+    "software engineer"
+  ],
+  "code quality": [
+    "sonarqube engineer"
+  ],
+  "sonarqube": [
+    "sonarqube engineer"
+  ],
+  "security analysis": [
+    "splunk enterprise security engineer"
+  ],
+  "security information and event management (siem)": [
+    "splunk enterprise security engineer"
+  ],
+  "incident response": [
+    "splunk enterprise security engineer"
+  ],
+  "splunk enterprise security": [
+    "splunk enterprise security engineer"
+  ],
+  "t-sql": [
+    "sql developer"
+  ],
+  "ssrs": [
+    "sql developer"
+  ],
+  "ssis": [
+    "sql developer"
+  ],
+  "incident management": [
+    "sre architect"
+  ],
+  "windows server administration": [
+    "systems administrator",
+    "systems engineer"
+  ],
+  "linux administration": [
+    "systems administrator",
+    "systems engineer"
+  ],
+  "systems design": [
+    "systems engineer"
+  ],
+  "teamcity": [
+    "teamcity engineer"
+  ],
+  "networking technologies": [
+    "tech sales engineer"
+  ],
+  "technical sales": [
+    "tech sales engineer"
+  ],
+  "customer engagement": [
+    "tech sales engineer"
+  ],
+  "product knowledge": [
+    "tech sales engineer"
+  ],
+  "customer relationship management (crm)": [
+    "technical account manager"
+  ],
+  "technical support": [
+    "technical account manager"
+  ],
+  "account management": [
+    "technical account manager"
+  ],
+  "software development lifecycle (sdlc)": [
+    "technical lead"
+  ],
+  "infrastructure as code (iac)": [
+    "terraform engineer"
+  ],
+  ".net development tools": [
+    "tfs engineer"
+  ],
+  ".net framework": [
+    "tfs engineer"
+  ],
+  "tfs (team foundation server)": [
+    "tfs engineer"
+  ],
+  "deployment strategies": [
+    "udeploy engineer"
+  ],
+  "udeploy (urbancode deploy)": [
+    "udeploy engineer"
+  ],
+  "figma": [
+    "ui designer",
+    "web designer (ui/ux designer)"
+  ],
+  "ui design principles": [
+    "ui designer"
+  ],
+  "user testing": [
+    "ui designer"
+  ],
+  "responsive design": [
+    "ui developer"
+  ],
+  "angularjs": [
+    "ui developer",
+    "web developer"
+  ],
+  "reactjs": [
+    "ui developer"
+  ],
+  "jquery": [
+    "ui developer"
+  ],
+  "css3": [
+    "ui developer",
+    "web developer",
+    "wordpress developer"
+  ],
+  "html5": [
+    "ui developer",
+    "web developer",
+    "wordpress developer"
+  ],
+  "3d modeling": [
+    "unity developer"
+  ],
+  "animation": [
+    "unity developer"
+  ],
+  "game development principles": [
+    "unity developer"
+  ],
+  "unity3d engine": [
+    "unity developer"
+  ],
+  "user experience design principles": [
+    "ux designer"
+  ],
+  "secrets management": [
+    "vault engineer"
+  ],
+  "access control": [
+    "vault engineer"
+  ],
+  "hashicorp vault": [
+    "vault engineer"
+  ],
+  "wordpress": [
+    "wordpress developer"
+  ],
+  "xl deploy": [
+    "xl deploy engineer"
+  ],
+  "alerting systems": [
+    "zabbix engineer"
+  ],
+  "monitoring tools": [
+    "zabbix engineer"
+  ],
+  "network monitoring": [
+    "zabbix engineer"
+  ],
+  "zabbix": [
+    "zabbix engineer"
+  ]
+}
