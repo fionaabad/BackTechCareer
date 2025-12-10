@@ -42,7 +42,8 @@ async def predict_skills(file: UploadFile = File(...)):
     if not text.strip():
         return {"error": "El PDF no contiene texto legible."}
 
-    skills = extract_skills_from_text(text)
+    all_words = extract_skills_from_text(text)
+    skills = get_skills_from_resume(all_words)  # ← only real skills
     ranking = rank_jobs_from_skills(skills)
     missing = get_missing_skills(skills)
 
@@ -52,6 +53,7 @@ async def predict_skills(file: UploadFile = File(...)):
         "ranking": ranking,
         "missing_skills_by_job": missing
     }
+
 
 @router.post("/rank_jobs_by_skills")
 def rank_jobs_by_skills(data: SkillInput):
@@ -70,7 +72,13 @@ async def rank_jobs_from_pdf(file: UploadFile = File(...)):
     if not text.strip():
         return {"error": "El PDF no contiene texto legible."}
 
-    skills = extract_skills_from_text(text)
+    all_words = extract_skills_from_text(text)
+    skills = get_skills_from_resume(all_words)  # ← only real skills
     ranking = rank_jobs_from_skills(skills)
     missing = get_missing_skills(skills)
 
+    return {
+        "skills_extracted": skills,
+        "ranking": ranking,
+        "missing_skills_by_job": missing
+    }
