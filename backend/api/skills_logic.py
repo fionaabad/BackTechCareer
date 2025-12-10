@@ -3,7 +3,7 @@ import os
 
 MODEL_PATH = os.path.join(
     os.path.dirname(os.path.dirname(__file__)),
-        "ml", "models", "skills", "skill_dict.json"
+    "ml", "models", "skills", "skill_dict.json"
 )
 
 skill_dict = {}
@@ -21,7 +21,9 @@ def load_model():
 
 load_model()
 
-def match_jobs(resume):
+def match_jobs(resume: list[str]):
+    """Return top 10 jobs with matching skills info."""
+    resume = [s.lower().strip() for s in resume]
     job_match_count = {}
     job_matched_skills = {}
 
@@ -33,11 +35,7 @@ def match_jobs(resume):
                     job_matched_skills[job] = set()
                 job_matched_skills[job].add(skill)
 
-    ranking = sorted(
-        job_match_count.items(),
-        key=lambda x: x[1],
-        reverse=True
-    )
+    ranking = sorted(job_match_count.items(), key=lambda x: x[1], reverse=True)
 
     top10 = []
     for job, count in ranking[:10]:
@@ -49,28 +47,23 @@ def match_jobs(resume):
 
     return top10
 
-def get_resume_skills(resume):
+def get_resume_skills(resume: list[str]):
+    """Return only the skills in the resume that exist in skill_dict."""
     resume = [s.lower().strip() for s in resume]
-    resume_skills = []
-    for s in resume:
-        if s in skill_dict:
-            resume_skills.append(s)
-    return resume_skills
+    return [s for s in resume if s in skill_dict]
 
-def get_missing_skills_by_job(resume):
+def get_missing_skills_by_job(resume: list[str]):
+    """Return missing skills per top job (skills in job but not in resume)."""
     resume = [s.lower().strip() for s in resume]
     top_jobs = match_jobs(resume)
-    
+
     missing_skills_by_job = {}
-    
-    for job_title, _ in top_jobs:
+    for job in top_jobs:
+        job_title = job["job_title"]
         missing_skills = set()
         for skill, jobs in skill_dict.items():
             if job_title in jobs and skill not in resume:
                 missing_skills.add(skill)
         missing_skills_by_job[job_title] = sorted(list(missing_skills))
-        
+
     return missing_skills_by_job
-
-    
-
