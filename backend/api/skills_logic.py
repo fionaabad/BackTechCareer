@@ -49,7 +49,28 @@ def match_jobs(resume):
 
     return top10
 
-def get_skills_in_dict(resume):
-    return [s for s in resume if s in skill_dict]
+def get_resume_skills(resume):
+    resume = [s.lower().strip() for s in resume]
+    resume_skills = []
+    for s in resume:
+        if s in skill_dict:
+            resume_skills.append(s)
+    return resume_skills
 
+def get_missing_skills_by_job(resume):
+    resume = [s.lower().strip() for s in resume]
+    top_jobs = match_jobs(resume)
+    
+    missing_skills_by_job = {}
+    
+    for job_title, _ in top_jobs:
+        missing_skills = set()
+        for skill, jobs in skill_dict.items():
+            if job_title in jobs and skill not in resume:
+                missing_skills.add(skill)
+        missing_skills_by_job[job_title] = sorted(list(missing_skills))
+        
+    return missing_skills_by_job
+
+    
 
