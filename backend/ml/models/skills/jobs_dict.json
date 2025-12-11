@@ -1,0 +1,181 @@
+{
+  "backend_developer": [
+    "python",
+    "java",
+    "c++",
+    "sql",
+    "nosql",
+    "rest apis",
+    "docker",
+    "kubernetes"
+  ],
+  "cloud_engineer": [
+    "cloud computing",
+    "aws",
+    "azure",
+    "google cloud",
+    "linux",
+    "networking",
+    "security",
+    "automation",
+    "scripting",
+    "virtualization"
+  ],
+  "data_scientist": [
+    "python",
+    "r",
+    "machine learning",
+    "data science",
+    "statistics",
+    "sql",
+    "hadoop",
+    "spark",
+    "data wrangling",
+    "data visualization",
+    "cloud computing"
+  ],
+  "database_administrator": [
+    "sql",
+    "database management",
+    "mysql",
+    "postgresql",
+    "oracle",
+    "database design",
+    "performance tuning",
+    "backup and recovery"
+  ],
+  "frontend_developer": [
+    "javascript",
+    "html",
+    "css",
+    "react",
+    "angular",
+    "vue.js",
+    "node.js",
+    "typescript",
+    "sass",
+    "ui/ux design"
+  ],
+  "fullstack_developer": [
+    "javascript",
+    "html",
+    "css",
+    "node.js",
+    "react",
+    "angular",
+    "express.js",
+    "mongodb",
+    "sql",
+    "python",
+    "django",
+    "devops",
+    "ci/cd"
+  ],
+  "java_developer": [
+    "java",
+    "spring framework",
+    "hibernate",
+    "j2ee",
+    "sql",
+    "rest apis",
+    "junit",
+    "maven",
+    "git",
+    "jenkins",
+    "cloud computing",
+    "microservices"
+  ],
+  "ml_engineer": [
+    "python",
+    "machine learning",
+    "tensorflow",
+    "keras",
+    "pytorch",
+    "data analysis",
+    "deep learning",
+    "natural language processing",
+    "computer vision",
+    "data science",
+    "algorithms"
+  ],
+  "mobile_app_developer": [
+    "android sdk",
+    "java",
+    "kotlin",
+    "ios",
+    "swift",
+    "objective-c",
+    "react native",
+    "flutter",
+    "mobile development",
+    "ui/ux design"
+  ],
+  "network_administrator": [
+    "networking",
+    "linux",
+    "windows server",
+    "troubleshooting",
+    "scripting",
+    "automation",
+    "system administration"
+  ],
+  "project_manager": [
+    "agile methodologies",
+    "scrum",
+    "kanban",
+    "project management",
+    "stakeholder management",
+    "communication",
+    "jira",
+    "confluence"
+  ],
+  "python_developer": [
+    "python",
+    "django",
+    "flask",
+    "rest apis",
+    "sql",
+    "data structures",
+    "algorithms",
+    "cloud computing",
+    "linux",
+    "docker",
+    "git"
+  ],
+  "security_analyst": [
+    "security",
+    "network security",
+    "firewalls",
+    "ids/ips",
+    "vulnerability management",
+    "penetration testing",
+    "security auditing"
+  ],
+  "software_developer": [
+    "programming",
+    "algorithms",
+    "data structures",
+    "debugging",
+    "software development",
+    "python",
+    "java",
+    "c++"
+  ],
+  "systems_administrator": [
+    "linux administration",
+    "windows server administration",
+    "networking",
+    "troubleshooting",
+    "scripting",
+    "virtualization"
+  ],
+  "web_developer": [
+    "html5",
+    "css3",
+    "javascript",
+    "react",
+    "node.js",
+    "angularjs",
+    "php"
+  ]
+}
