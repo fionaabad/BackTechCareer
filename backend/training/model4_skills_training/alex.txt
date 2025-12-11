@@ -1,0 +1,41 @@
+ÀLEX MILIAN DIEGUEZ PYTHON DEVELOPER | Analista de datos
+Teléfono: 622931616
+Mail: alexmiliandieguez@gmail.com
+Github: miliandieguez
+Linkedin: Àlex Milian Dieguez
+TECH STACK
+Python | SQL | VScode | R | MATLAB | HTML
+PERFIL
+Empecé Biología Ambiental motivado por entender los sistemas naturales. Con el tiempo, descubrí que la programación ofrecía
+una nueva forma de explorar ese conocimiento. Así me especialicé en desarrollo backend, análisis de datos e IA, con el objetivo
+de aplicar la tecnología para comprender lo que me rodea, resolver problemas reales y generar un impacto positivo.
+EXPERIENCIA PROFESIONAL
+ANALISTA DE DATOS
+Proyecto de Mapeo de Fondos Marinos. Universidade do Algarve | Faro, Portugal. 2022
+- Análisis de datos batimétricos para el mapeo de fondos marinos
+- Desarrollo de modelos digitales del terreno submarino con MATLAB
+- Procesamiento y visualización con Python (NumPy, Pandas, Matplotlib)
+- Colaboración con equipos para la interpretación de datos
+WEB DEVELOPER
+Proyecto 3DvirtualHerp. Universitat Autònoma de Barcelona | Barcelona. 2021
+- Desarrollo front-end en HTML para una aplicación web
+- Implementación de elementos interactivos (modelos 3D)
+- Optimización de la interfaz de usuario
+SECRETARIO POLÍTICO
+CJD7. 2020 – 2023. Horta – Guinardó | Barcelona
+- Coordinación y supervisión de agentes externos e internos
+- Gestión de proyectos, entidades, trabajadores y eventos
+FORMACIÓN
+IA& MACHINE LEARNING – PYTHON
+Fundación Esplai Bootcamp | Barcelona. 2025
+- Python Backend: desarrollo de APIs con Django y FastAPI
+- Data Science (Pandas, NumPy) y Machine Learning (TensorFlow, PyTorch)
+- Aplicación de IA generativa y LLMs en proyectos reales
+GRADO EN BIOLOGÍA AMBIENTAL
+Univeristat Autònoma de Barcelona | Barcelona. 2017 – 2022
+IDIOMAS
+Catalán C1 | Castellano C2 | Inglés B2 (FCE) | Portugués B1
+DATOS DE INTERÉS
+- Residencia actual: Barcelona
+- Permiso de conducir B
+- Jornada completa y actualmente disponible
