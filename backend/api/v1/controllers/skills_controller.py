@@ -12,29 +12,26 @@ JOB_SKILLS_PATH = os.path.join(
     "ml", "models", "skills", "job_skills.json"
 )
 
-skill_dict = {}
-job_skills = {}
+with open(SKILLS_DICT_PATH, "r", encoding="utf-8") as f:
+    skill_dict = {k.lower(): v for k, v in json.load(f).items()}
 
-def load_model():
-    global skill_dict, job_skills
-
-    with open(SKILLS_DICT_PATH, "r", encoding="utf-8") as f:
-        skill_dict = {k.lower(): v for k, v in json.load(f).items()}
-
-    with open(JOB_SKILLS_PATH, "r", encoding="utf-8") as f:
-        job_skills.update(json.load(f))
-
-load_model()
+with open(JOB_SKILLS_PATH, "r", encoding="utf-8") as f:
+    job_skills = json.load(f)
 
 def extract_skills(text: str) -> list[str]:
+    """Return all skills found in the text."""
     text = text.lower()
     found = []
+
     for skill in skill_dict.keys():
         if re.search(r"\b" + re.escape(skill) + r"\b", text):
             found.append(skill)
+
     return sorted(set(found))
 
+
 def match_jobs(skills: list[str]) -> list[dict]:
+    """Return top job matches given a list of skills."""
     job_match_count = {}
     job_matched_skills = {}
 
@@ -55,22 +52,13 @@ def match_jobs(skills: list[str]) -> list[dict]:
         for job, count in ranking[:10]
     ]
 
+
 def get_missing_skills_by_job(skills: list[str]) -> dict:
+    """Return missing skills for each matched job."""
     top_jobs = match_jobs(skills)
     skills_set = set(skills)
 
-    missing = {}
-    for entry in top_jobs:
-        job = entry["job_title"]
-        missing[job] = sorted(set(job_skills[job]) - skills_set)
-
-    return missing
-
-def extract_skills_from_text(text: str) -> list[str]:
-    return extract_skills(text)
-
-def rank_jobs_from_skills(skills: list[str]):
-    return match_jobs(skills)
-
-def get_missing_skills(skills: list[str]):
-    return get_missing_skills_by_job(skills)
+    return {
+        entry["job_title"]: sorted(set(job_skills[entry["job_title"]]) - skills_set)
+        for entry in top_jobs
+    }
