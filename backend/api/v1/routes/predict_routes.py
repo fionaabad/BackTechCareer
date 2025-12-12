@@ -1,6 +1,6 @@
 from fastapi import APIRouter, UploadFile, File
 from backend.api.v1.controllers.predict_controller import (
-    extract_text_from_pdf, 
+    extract_text_from_pdf,
     predict_text
 )
 

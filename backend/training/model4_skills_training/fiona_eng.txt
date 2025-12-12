@@ -1,0 +1,79 @@
+FIONA ABAD MUÑOZ
+Data Analyst
++34 691 538 349
+github.com/fionaabad
+fionaabadmunoz@gmail.com
+Barcelona
+Computer Engineering student with specialized training in Data
+Analytics (Ironhack bootcamp) and hands-on projects using Python,
+SQL, data visualization, and machine learning. Fast learner, team
+player, and driven to grow professionally while adding value to the
+organizations I work with. Motivated by challenges and continuously
+developing skills to find solutions and generate positive impact in
+collaborative environments.
+Experience
+Web Developer – Proton Future
+2024–2025 | Barcelona
+Designed and developed websites using WordPress, HubSpot,
+WP Bakery, and Elementor.
+Adapted designs to client needs, optimizing UX/UI.
+Integrated marketing and analytics tools into websites.
+Administrative – Grupo Real Estate
+2023 | Terrassa
+Maintained effective communication with clients.
+Handled documentation of sales transactions, contracts, and
+regulatory compliance.
+Community Manager – Grupo HG
+2023–2024 | Barcelona
+Managed content for websites and social media (Instagram,
+Twitter, TikTok).
+Administered websites using WordPress and Ionos.
+Education
+Data Analytics Bootcamp
+Ironhack — Barcelona 2023
+Python, SQL, Power BI, Tableau, Machine Learning, data analysis &
+visualization.
+Bachelor’s Degree in Computer Engineering (in progress)
+UOC 2024 – Present
+Scientific Baccalaureate
+Escola Pia 2020
+Personal Interests
+Writing Basketball (15 years)
+Board games
+Fortalezas
+Analytical Thinking
+Effective Communication
+Team Collaboration
+Skills
+Python SQL Tableau Power BI
+Machine Learning Data Analysis
+Data Visualization
+Data Cleaning
+WordPress Hubspot
+WP Bakery Elementor
+Web Scraping C ++ Statistical Analysis
+Effective Communication Problem Solving
+Analytical Thinking Team Collaboration
+Projects
+Shape Identifier
+A web app where users draw shapes, and system identifies and classifies them.
+the
+Python, machine learning, data collection &
+processing
+Climate Change Forecast
+Assessment and predictions about future climate
+trends.
+SQL, data collection & cleaning, web scraping,
+visualization, statistical analysis, Python
+Recipe Generator
+AI-powered system to generate customized
+recipes.
+Python, web scraping, ML, data cleaning &
+management
+Languages
+Catalan
+Native
+Spanish
+Native
+English
+Advanced
