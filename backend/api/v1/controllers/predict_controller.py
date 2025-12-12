@@ -1,61 +1,42 @@
-import json
-import os
-import re
+import io
+import joblib
+import numpy as np
+import pdfplumber
 
-SKILLS_DICT_PATH = os.path.join(
-    os.path.dirname(os.path.dirname(__file__)),
-    "ml", "models", "skills", "skill_dict.json"
-)
+MODEL_PATH = "backend/ml/models/cv_role/model.pkl"
+VECTORIZER_PATH = "backend/ml/models/cv_role/vectorizer.pkl"
 
-JOB_SKILLS_PATH = os.path.join(
-    os.path.dirname(os.path.dirname(__file__)),
-    "ml", "models", "skills", "job_skills.json"
-)
+modelo = joblib.load(MODEL_PATH)
+vectorizer = joblib.load(VECTORIZER_PATH)
 
-with open(SKILLS_DICT_PATH, "r", encoding="utf-8") as f:
-    skill_dict = {k.lower(): v for k, v in json.load(f).items()}
+def extract_text_from_pdf(pdf_bytes: bytes) -> str:
+    pdf_file = io.BytesIO(pdf_bytes)
+    with pdfplumber.open(pdf_file) as pdf:
+        return "\n".join(page.extract_text() or "" for page in pdf.pages)
 
-with open(JOB_SKILLS_PATH, "r", encoding="utf-8") as f:
-    job_skills = json.load(f)
+def predict_text(cv_text: str):
+    vector = vectorizer.transform([cv_text]).toarray()
+    probs = modelo.predict_proba(vector)[0]
 
+    best_idx = int(np.argmax(probs))
+    best_title = modelo.classes_[best_idx]
 
-def extract_skills(text: str) -> list[str]:
-    text = text.lower()
-    found = []
-
-    for skill in skill_dict.keys():
-        if re.search(r"\b" + re.escape(skill) + r"\b", text):
-            found.append(skill)
-            
-    return sorted(set(found))
-
-
-def match_jobs(skills: list[str]) -> list[dict]:
-    job_match_count = {}
-    job_matched_skills = {}
-
-    for skill in skills:
-        if skill in skill_dict:
-            for job in skill_dict[skill]:
-                job_match_count[job] = job_match_count.get(job, 0) + 1
-                job_matched_skills.setdefault(job, set()).add(skill)
-
-    ranking = sorted(job_match_count.items(), key=lambda x: x[1], reverse=True)
-
-    return [
+    top3_idx = probs.argsort()[-3:][::-1]
+    top3 = [
         {
-            "job_title": job,
-            "matching_skills_count": count,
-            "matching_skills": sorted(list(job_matched_skills[job]))
+            "job_title": modelo.classes_[i],
+            "prob": float(probs[i]),
         }
-        for job, count in ranking[:10]
+        for i in top3_idx
     ]
 
-def get_missing_skills_by_job(skills: list[str]) -> dict:
-    top_jobs = match_jobs(skills)
-    skills_set = set(skills)
+    probs_dict = {
+        modelo.classes_[i]: float(prob)
+        for i, prob in enumerate(probs)
+    }
 
     return {
-        entry["job_title"]: sorted(set(job_skills[entry["job_title"]]) - skills_set)
-        for entry in top_jobs
+        "prediccion": best_title,
+        "top3": top3,
+        "probabilidades": probs_dict
     }
