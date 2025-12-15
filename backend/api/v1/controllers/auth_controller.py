@@ -1,4 +1,14 @@
 from fastapi import HTTPException
+<<<<<<< HEAD
+from api.v1.schemas.user_schemas import UserLogin
+from api.v1.schemas.user_schemas import UserRegister
+from db.queries.user_queries import LOGIN_QUERY
+from db.queries.user_queries import REGISTER_QUERY
+from mysql.connector.errors import IntegrityError
+from db.connection import get_connection
+from core.security import verify_password
+from core.security import hash_password
+=======
 from backend.api.v1.schemas.user_schemas import (
     UserLogin,
     UserRegister,
@@ -14,6 +24,7 @@ from mysql.connector.errors import IntegrityError
 from backend.db.connection import get_connection
 from backend.core.security import verify_password, hash_password
 
+>>>>>>> eaf515c83fe588bbe91d809a131cd579469262fa
 
 def login_user(data: UserLogin):
     conn = get_connection()

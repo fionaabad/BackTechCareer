@@ -1,7 +1,14 @@
 from fastapi import APIRouter, UploadFile, File
-from backend.api.v1.controllers.predict_controller import (
-    extract_text_from_pdf,
+from pydantic import BaseModel
+from api.v1.controllers.predict_controller import (
+    extract_text_from_pdf, 
     predict_text
+)
+from api.v1.controllers.skills_controller import (
+    extract_skills_from_text,
+    rank_jobs_from_skills,
+    get_skills_from_resume,
+    get_missing_skills
 )
 
 router = APIRouter(tags=["Prediction"])
