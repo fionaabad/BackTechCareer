@@ -13,7 +13,6 @@ with open(JOB_SKILLS_PATH, "r", encoding="utf-8") as f:
     job_skills = json.load(f)
 
 def extract_skills(text: str) -> list[str]:
-    """Return all skills found in the text."""
     text = text.lower()
     found = []
 
@@ -25,7 +24,6 @@ def extract_skills(text: str) -> list[str]:
 
 
 def match_jobs(skills: list[str]) -> list[dict]:
-    """Return top job matches given a list of skills."""
     job_match_count = {}
     job_matched_skills = {}
 
@@ -48,7 +46,6 @@ def match_jobs(skills: list[str]) -> list[dict]:
 
 
 def get_missing_skills_by_job(skills: list[str]) -> dict:
-    """Return missing skills for each matched job."""
     top_jobs = match_jobs(skills)
     skills_set = set(skills)
 
@@ -56,3 +53,11 @@ def get_missing_skills_by_job(skills: list[str]) -> dict:
         entry["job_title"]: sorted(set(job_skills[entry["job_title"]]) - skills_set)
         for entry in top_jobs
     }
+
+def top1_comparison(predicted_job: str, skills_detected: list[str]):
+
+    required_skills = job_skills.get(predicted_job, [])
+    matching = [s for s in skills_detected if s in required_skills]
+    missing = [s for s in required_skills if s not in skills_detected]
+
+    return {"job_title": predicted_job, "matching_skills": matching, "missing_skills": missing}
