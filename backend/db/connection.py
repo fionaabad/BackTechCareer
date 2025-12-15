@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
+print("ENV TEST:", os.getenv("DB_HOST"))
 
 def get_connection():
     return mysql.connector.connect(
