@@ -2,15 +2,9 @@ import json
 import os
 import re
 
-SKILLS_DICT_PATH = os.path.join(
-    os.path.dirname(os.path.dirname(__file__)),
-    "ml", "models", "skills", "skill_dict.json"
-)
+SKILLS_DICT_PATH = "backend/ml/models/skills/skill_dict.json"
 
-JOB_SKILLS_PATH = os.path.join(
-    os.path.dirname(os.path.dirname(__file__)),
-    "ml", "models", "skills", "job_skills.json"
-)
+JOB_SKILLS_PATH = "backend/ml/models/skills/job_skills.json"
 
 with open(SKILLS_DICT_PATH, "r", encoding="utf-8") as f:
     skill_dict = {k.lower(): v for k, v in json.load(f).items()}
