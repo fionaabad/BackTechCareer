@@ -5,6 +5,8 @@ from typing import List, Dict, Any
 from core.chat_prompt import SYSTEM_PROMPT
 from core.config import settings
 from api.v1.schemas.chat_schemas import ChatMessage
+import google.generativeai as genai
+from fastapi import HTTPException
 
 
 def _build_llm_messages(messages: List[ChatMessage]) -> List[Dict[str, str]]:
@@ -36,47 +38,79 @@ def _build_llm_messages(messages: List[ChatMessage]) -> List[Dict[str, str]]:
 
 def _call_gemini_api(llm_messages: List[Dict[str, str]]) -> str:
     """
-    Punto central donde, más adelante, integraremos la llamada real a Gemini.
+    Implementación REAL de la llamada a Gemini.
 
-    De momento devuelve una respuesta de prueba (modo 'fake') para poder
-    probar el endpoint /api/v1/chat sin depender todavía de la API externa.
+    - Lee la API key desde settings.GEMINI_API_KEY
+    - Configura el cliente de Gemini
+    - Construye un prompt a partir de los mensajes (system + user/assistant)
+    - Llama al modelo y devuelve el texto de la respuesta
 
-    Cuando integremos Gemini de verdad, esta función:
-      - Leerá la API key desde settings.GEMINI_API_KEY
-      - Creará el cliente de Gemini
-      - Enviará llm_messages al modelo
-      - Devolverá el texto de la respuesta generada
+    Si falta la API key o hay un error al llamar a la API,
+    lanza una HTTPException para que FastAPI devuelva un error claro.
     """
-    # API key (aún sin usar, pero la dejamos preparada)
     api_key = settings.GEMINI_API_KEY
 
-    # TODO: aquí irá la integración real con Gemini.
-    # Por ahora devolvemos una respuesta de ejemplo para poder probar el flujo.
-    # Podemos usar el último mensaje del usuario para hacer el fake más agradable.
-    last_user_message = None
-    for msg in reversed(llm_messages):
-        if msg["role"] == "user":
-            last_user_message = msg["content"]
-            break
-
-    if last_user_message:
-        return (
-            "👋 Hola, soy TechCareer Assistant (modo demo).\n\n"
-            "De momento estoy en una versión de prueba sin conexión real a Gemini, "
-            "pero ya puedo ayudarte con dudas generales sobre la plataforma, "
-            "tecnología o carrera profesional.\n\n"
-            f"He recibido tu mensaje: «{last_user_message}».\n"
-            "Cuando activemos la integración con el modelo de lenguaje, "
-            "podré responderte de forma mucho más inteligente 😊."
+    if not api_key:
+        # Si no hay API key configurada, devolvemos un error 500 claro
+        raise HTTPException(
+            status_code=500,
+            detail="Gemini API key no configurada. Define GEMINI_API_KEY en el archivo .env.",
         )
 
-    # Si por alguna razón no hay mensaje de usuario:
-    return (
-        "👋 Hola, soy TechCareer Assistant (modo demo).\n\n"
-        "Todavía no he recibido ninguna pregunta tuya, "
-        "pero puedes escribirme para que te ayude con dudas sobre "
-        "TechCareer, la plataforma o el mundo tech en general."
-    )
+    # Configuramos el cliente de Gemini con la API key
+    genai.configure(api_key=api_key)
+
+    # Para simplificar, vamos a convertir la lista de mensajes en un único prompt de texto.
+    # Podríamos mapear roles de forma más sofisticada, pero para este uso nos vale
+    # concatenar el mensaje de sistema y luego los mensajes de usuario/assistant.
+    # El SYSTEM_PROMPT ya viene como primer mensaje (role="system") desde _build_llm_messages.
+
+    system_part = ""
+    conversation_parts: List[str] = []
+
+    for msg in llm_messages:
+        role = msg["role"]
+        content = msg["content"]
+
+        if role == "system":
+            # Nos quedamos con el prompt del sistema
+            system_part = content
+        elif role == "user":
+            conversation_parts.append(f"Usuario: {content}")
+        elif role == "assistant":
+            conversation_parts.append(f"Asistente: {content}")
+
+    # Construimos el prompt final que daremos al modelo
+    full_prompt = system_part.strip() + "\n\n" + "\n".join(conversation_parts).strip()
+
+    try:
+        # Creamos el modelo de Gemini que quieras usar (por ejemplo, gemini-1.5-flash)
+        model = genai.GenerativeModel("gemini-1.5-flash")
+
+        # Llamamos al modelo con el prompt
+        response = model.generate_content(full_prompt)
+
+        # Extraemos el texto de la respuesta
+        reply_text = response.text if hasattr(response, "text") else str(response)
+
+        if not reply_text:
+            raise HTTPException(
+                status_code=502,
+                detail="Gemini no devolvió texto en la respuesta.",
+            )
+
+        return reply_text
+
+    except HTTPException:
+        # Re-lanzamos errores HTTP tal cual
+        raise
+    except Exception as e:
+        # Cualquier otro error lo traducimos a un 502 para el cliente
+        raise HTTPException(
+            status_code=502,
+            detail=f"Error al comunicarse con Gemini: {e}",
+        )
+
 
 
 def generate_chat_reply(messages: List[ChatMessage]) -> str:

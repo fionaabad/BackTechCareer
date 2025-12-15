@@ -1,10 +1,10 @@
 from fastapi import APIRouter, UploadFile, File
 from pydantic import BaseModel
-from backend.api.v1.controllers.predict_controller import (
+from api.v1.controllers.predict_controller import (
     extract_text_from_pdf, 
     predict_text
 )
-from backend.api.v1.controllers.skills_controller import (
+from api.v1.controllers.skills_controller import (
     extract_skills_from_text,
     rank_jobs_from_skills,
     get_skills_from_resume,

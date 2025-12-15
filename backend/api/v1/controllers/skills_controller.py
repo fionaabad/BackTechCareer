@@ -1,6 +1,6 @@
 import io
 import pdfplumber
-from backend.api.skills_logic import match_jobs, get_resume_skills, get_missing_skills_by_job
+from api.skills_logic import match_jobs, get_resume_skills, get_missing_skills_by_job
 
 def extract_text_from_pdf(pdf_bytes: bytes) -> str:
     pdf_file = io.BytesIO(pdf_bytes)
