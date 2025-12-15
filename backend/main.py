@@ -1,10 +1,10 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from api.v1.routes.auth_routes import router as auth_router
-from api.v1.routes.predict_routes import router as predict_router
-from api.v1.routes.skills_routes import router as skills_router
-from api.v1.routes.chat_routes import router as chat_router
+from backend.api.v1.routes.auth_routes import router as auth_router
+from backend.api.v1.routes.predict_routes import router as predict_router
+from backend.api.v1.routes.skills_routes import router as skills_router
+from backend.api.v1.routes.chat_routes import router as chat_router
 
 app = FastAPI()
 
