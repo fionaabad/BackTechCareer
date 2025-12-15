@@ -4,7 +4,7 @@ from typing import List, Dict, Any
 
 from core.chat_prompt import SYSTEM_PROMPT
 from core.config import settings
-from api.v1.schemas.chat_schemas import ChatMessage
+from backend.api.v1.schemas.chat_schemas import ChatMessage
 import google.generativeai as genai
 from fastapi import HTTPException
 

@@ -11,7 +11,7 @@ from backend.api.v1.controllers.skills_controller import (
     get_missing_skills
 )
 from fastapi import APIRouter, UploadFile, File, HTTPException
-from api.v1.controllers.seniority_controller import predict_seniority_from_text
+from backend.api.v1.controllers.seniority_controller import predict_seniority_from_text
 
 
 router = APIRouter(tags=["Prediction"])
