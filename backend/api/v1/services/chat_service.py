@@ -2,8 +2,8 @@
 
 from typing import List, Dict, Any
 
-from core.chat_prompt import SYSTEM_PROMPT
-from core.config import settings
+from backend.core.chat_prompt import SYSTEM_PROMPT
+from backend.core.config import settings
 from backend.api.v1.schemas.chat_schemas import ChatMessage
 import google.generativeai as genai
 from fastapi import HTTPException
