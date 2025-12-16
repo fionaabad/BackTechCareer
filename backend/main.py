@@ -4,6 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from backend.api.v1.routes.auth_routes import router as auth_router
 from backend.api.v1.routes.predict_routes import router as predict_router
 from backend.api.v1.routes.skills_routes import router as skills_router
+from backend.api.v1.routes.pdf_routes import router as pdf_router
 
 app = FastAPI()
 
@@ -18,3 +19,4 @@ app.add_middleware(
 app.include_router(auth_router, prefix="/api/v1")
 app.include_router(predict_router, prefix="/api/v1")
 app.include_router(skills_router, prefix="/api/v1/skills")
+app.include_router(pdf_router, prefix="/api/v1")

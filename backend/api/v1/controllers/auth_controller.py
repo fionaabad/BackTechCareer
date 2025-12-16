@@ -28,7 +28,6 @@ def login_user(data: UserLogin):
     if not verify_password(data.password, user["password"]):
         raise HTTPException(status_code=401, detail="Contraseña incorrecta.")
 
-    # devolver campos estándar para frontend
     return {
         "message": "Login exitoso",
         "user": {
@@ -41,18 +40,52 @@ def login_user(data: UserLogin):
 
 
 def register_user(data: UserRegister):
+    # 1️⃣ Validación de contraseñas
+    if data.password != data.confirm_password:
+        raise HTTPException(
+            status_code=400,
+            detail="Las contraseñas no coinciden"
+        )
+
     conn = get_connection()
     cursor = conn.cursor()
 
-    hashed = hash_password(data.password)
+    # 2️⃣ Hasheamos contraseña
+    hashed_password = hash_password(data.password)
 
-    cursor.execute(
-        "INSERT INTO users (email, password, name, avatar) VALUES (%s, %s, %s, %s)",
-        (data.email, hashed, data.name, data.avatar)
-    )
+    try:
+        # 3️⃣ Insert usuario
+        cursor.execute(
+            REGISTER_QUERY,
+            (
+                data.email,
+                hashed_password,
+                data.name,
+                data.avatar
+            )
+        )
+        conn.commit()
 
-    conn.commit()
-    return {"message": "Usuario creado"}
+    except IntegrityError:
+        # Email duplicado
+        raise HTTPException(
+            status_code=409,
+            detail="El email ya está registrado"
+        )
+
+    finally:
+        cursor.close()
+        conn.close()
+
+    # 4️⃣ Respuesta limpia para el frontend
+    return {
+        "message": "Usuario creado correctamente",
+        "user": {
+            "email": data.email,
+            "name": data.name,
+            "avatar": data.avatar
+        }
+    }
 
 
 def update_password_controller(data: UpdatePassword):
@@ -86,8 +119,10 @@ def update_user(user_id: int, data: UserUpdate):
 
     conn.commit()
 
-    # obtener datos actualizados
-    cursor.execute("SELECT idusers, email, name, avatar FROM users WHERE idusers=%s", (user_id,))
+    cursor.execute(
+        "SELECT idusers, email, name, avatar FROM users WHERE idusers=%s",
+        (user_id,)
+    )
     updated = cursor.fetchone()
 
     return {
