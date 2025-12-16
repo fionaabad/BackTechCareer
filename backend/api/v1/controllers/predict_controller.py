@@ -2,12 +2,22 @@ import io
 import joblib
 import numpy as np
 import pdfplumber
+import re
+import json
 
 MODEL_PATH = "backend/ml/models/cv_role/model.pkl"
 VECTORIZER_PATH = "backend/ml/models/cv_role/vectorizer.pkl"
+SKILLS_DICT_PATH = "backend/ml/models/skills/skill_dict.json"
+JOB_SKILLS_PATH = "backend/ml/models/skills/job_skills.json"
 
 modelo = joblib.load(MODEL_PATH)
 vectorizer = joblib.load(VECTORIZER_PATH)
+
+with open(SKILLS_DICT_PATH, "r", encoding="utf-8") as f:
+    skill_dict = {k.lower(): v for k, v in json.load(f).items()}
+
+with open(JOB_SKILLS_PATH, "r", encoding="utf-8") as f:
+    job_skills = json.load(f)
 
 def extract_text_from_pdf(pdf_bytes: bytes) -> str:
     pdf_file = io.BytesIO(pdf_bytes)
@@ -23,20 +33,42 @@ def predict_text(cv_text: str):
 
     top3_idx = probs.argsort()[-3:][::-1]
     top3 = [
-        {
-            "job_title": modelo.classes_[i],
-            "prob": float(probs[i]),
-        }
+        {"job_title": modelo.classes_[i], "prob": float(probs[i])}
         for i in top3_idx
     ]
 
-    probs_dict = {
-        modelo.classes_[i]: float(prob)
-        for i, prob in enumerate(probs)
-    }
+    probs_dict = {modelo.classes_[i]: float(prob) for i, prob in enumerate(probs)}
 
-    return {
-        "prediccion": best_title,
-        "top3": top3,
-        "probabilidades": probs_dict
-    }
+    return {"prediccion": best_title, "top3": top3, "probabilidades": probs_dict}
+
+def extract_skills(text: str) -> list[str]:
+    text = text.lower()
+    found = []
+
+    for skill in skill_dict.keys():
+        if re.search(r"\b" + re.escape(skill) + r"\b", text):
+            found.append(skill)
+
+    return sorted(set(found))
+
+def skills_for_jobs(skills: list[str], predicted_jobs: list[str]) -> list[dict]:
+    user_skills = set(skills)
+    results = []
+
+    for job_title in predicted_jobs:
+        if job_title not in job_skills:
+            continue
+
+        required_skills = set(job_skills[job_title])
+        matching_skills = sorted(required_skills & user_skills)
+        missing_skills = sorted(required_skills - user_skills)
+
+        results.append({
+            "job_title": job_title,
+            "matching_skills": matching_skills,
+            "missing_skills": missing_skills,
+            "matching_skills_count": len(matching_skills),
+            "missing_skills_count": len(missing_skills),
+        })
+
+    return results
