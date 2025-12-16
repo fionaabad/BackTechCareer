@@ -4,8 +4,8 @@ from typing import List
 
 from fastapi import HTTPException, status
 
-from api.v1.schemas.chat_schemas import ChatRequest, ChatResponse, ChatMessage
-from api.v1.services.chat_service import generate_chat_reply
+from backend.api.v1.schemas.chat_schemas import ChatRequest, ChatResponse, ChatMessage
+from backend.api.v1.services.chat_service import generate_chat_reply
 
 
 def handle_chat(request: ChatRequest) -> ChatResponse:

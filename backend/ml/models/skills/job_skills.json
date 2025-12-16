@@ -44,9 +44,6 @@
     "maven",
     "version control"
   ],
-  "artificial intelligence / machine learning engineer": [
-    ""
-  ],
   "artificial intelligence / machine learning leader": [
     "ai strategy",
     "budgeting",
@@ -59,20 +56,7 @@
     "stakeholder management",
     "team management"
   ],
-  "artificial intelligence / machine learning sr.leader": [
-    "ai strategy",
-    "budgeting",
-    "cloud computing",
-    "communication",
-    "data science",
-    "deep learning",
-    "innovation",
-    "machine learning",
-    "mentoring",
-    "project management",
-    "stakeholder management",
-    "team management"
-  ],
+
   "artificial intelligence architect": [
     "ai architecture",
     "aws",
@@ -300,7 +284,7 @@
     "security",
     "system design"
   ],
-  "machine learning engineer": [
+  "ml_engineer": [
     "algorithms",
     "computer vision",
     "data analysis",
@@ -611,7 +595,18 @@
     "scripting",
     "version control"
   ],
-  "bitbucket engineer": [
+"backend_developer": [
+    "python",
+    "java",
+    "c++",
+    "sql",
+    "nosql",
+    "rest apis",
+    "docker",
+    "kubernetes"
+  ],
+
+"bitbucket engineer": [
     "atlassian suite",
     "bitbucket",
     "branching strategies",
@@ -701,7 +696,7 @@
     "scripting",
     "terraform"
   ],
-  "cloud engineer": [
+  "cloud_engineer": [
     "automation",
     "aws",
     "azure",
@@ -867,7 +862,7 @@
     "er diagrams",
     "sql"
   ],
-  "data scientist": [
+  "data_scientist": [
     "cloud computing",
     "data science",
     "data visualization",
@@ -880,7 +875,7 @@
     "sql",
     "statistics"
   ],
-  "database administrator": [
+  "database_administrator": [
     "backup and recovery",
     "database design",
     "database management",
@@ -1079,7 +1074,7 @@
     "spring framework",
     "vue.js"
   ],
-  "front end developer": [
+  "frontend_developer": [
     "angular",
     "css",
     "html",
@@ -1103,7 +1098,7 @@
     "ui/ux design",
     "vue.js"
   ],
-  "full stack developer": [
+  "fullstack_developer": [
     "angular",
     "ci/cd",
     "css",
@@ -1246,7 +1241,7 @@
     "user research",
     "wireframing"
   ],
-  "information security analyst": [
+  "security_analyst": [
     "firewalls",
     "ids/ips",
     "network security",
@@ -1283,7 +1278,7 @@
     "service mesh",
     "traffic management"
   ],
-  "it manager": [
+  "project_manager": [
     "agile methodologies",
     "budgeting",
     "cloud computing",
@@ -1301,7 +1296,7 @@
     "quality assurance",
     "testing"
   ],
-  "java developer": [
+  "java_developer": [
     "cloud computing",
     "git",
     "hibernate",
@@ -1455,7 +1450,7 @@
     "security",
     "soa"
   ],
-  "mobile app developer": [
+  "mobile_app_developer": [
     "android sdk",
     "flutter",
     "ios",
@@ -1497,7 +1492,7 @@
     "scripting",
     "system administration"
   ],
-  "network and systems administrator": [
+  "network_administrator": [
     "automation",
     "linux",
     "networking",
@@ -1690,7 +1685,7 @@
     "testing",
     "unit testing"
   ],
-  "python developer": [
+  "python_developer": [
     "algorithms",
     "cloud computing",
     "data structures",
@@ -1869,7 +1864,7 @@
     "sharepoint",
     "sharepoint framework"
   ],
-  "software developer": [
+  "software_developer": [
     "algorithms",
     "c++",
     "data structures",
@@ -1941,7 +1936,7 @@
     "python",
     "sre"
   ],
-  "systems administrator": [
+  "systems_administrator": [
     "linux administration",
     "networking",
     "scripting",
@@ -2049,7 +2044,7 @@
     "ui/ux design",
     "wireframing"
   ],
-  "web developer": [
+  "web_developer": [
     "angularjs",
     "css3",
     "html5",

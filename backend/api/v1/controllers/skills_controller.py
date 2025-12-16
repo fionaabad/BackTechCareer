@@ -1,9 +1,7 @@
 import json
-import os
 import re
 
 SKILLS_DICT_PATH = "backend/ml/models/skills/skill_dict.json"
-
 JOB_SKILLS_PATH = "backend/ml/models/skills/job_skills.json"
 
 with open(SKILLS_DICT_PATH, "r", encoding="utf-8") as f:
@@ -12,8 +10,8 @@ with open(SKILLS_DICT_PATH, "r", encoding="utf-8") as f:
 with open(JOB_SKILLS_PATH, "r", encoding="utf-8") as f:
     job_skills = json.load(f)
 
+
 def extract_skills(text: str) -> list[str]:
-    """Return all skills found in the text."""
     text = text.lower()
     found = []
 
@@ -24,35 +22,29 @@ def extract_skills(text: str) -> list[str]:
     return sorted(set(found))
 
 
-def match_jobs(skills: list[str]) -> list[dict]:
-    """Return top job matches given a list of skills."""
-    job_match_count = {}
-    job_matched_skills = {}
+def skills_for_jobs(
+    skills: list[str],
+    predicted_jobs: list[str],
+) -> list[dict]:
 
-    for skill in skills:
-        if skill in skill_dict:
-            for job in skill_dict[skill]:
-                job_match_count[job] = job_match_count.get(job, 0) + 1
-                job_matched_skills.setdefault(job, set()).add(skill)
+    user_skills = set(skills)
+    results = []
 
-    ranking = sorted(job_match_count.items(), key=lambda x: x[1], reverse=True)
+    for job_title in predicted_jobs:
+        if job_title not in job_skills:
+            continue 
 
-    return [
-        {
-            "job_title": job,
-            "matching_skills_count": count,
-            "matching_skills": sorted(list(job_matched_skills[job]))
-        }
-        for job, count in ranking[:10]
-    ]
+        required_skills = set(job_skills[job_title])
 
+        matching_skills = sorted(required_skills & user_skills)
+        missing_skills = sorted(required_skills - user_skills)
 
-def get_missing_skills_by_job(skills: list[str]) -> dict:
-    """Return missing skills for each matched job."""
-    top_jobs = match_jobs(skills)
-    skills_set = set(skills)
+        results.append({
+            "job_title": job_title,
+            "matching_skills": matching_skills,
+            "missing_skills": missing_skills,
+            "matching_skills_count": len(matching_skills),
+            "missing_skills_count": len(missing_skills),
+        })
 
-    return {
-        entry["job_title"]: sorted(set(job_skills[entry["job_title"]]) - skills_set)
-        for entry in top_jobs
-    }
+    return results
