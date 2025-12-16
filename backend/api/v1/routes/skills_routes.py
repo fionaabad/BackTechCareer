@@ -1,31 +1,32 @@
-from fastapi import APIRouter, UploadFile, File
+from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 from backend.api.v1.controllers.predict_controller import extract_text_from_pdf
 from backend.api.v1.controllers.skills_controller import (
     extract_skills,
-    match_jobs,
-    get_missing_skills_by_job,
-    top1_comparison,
+    skills_for_jobs,
 )
 
 router = APIRouter(tags=["Skills"])
 
-class TextInput(BaseModel):
+class SkillsRequest(BaseModel):
     text: str
+    predicted_jobs: list[str]
 
-@router.post("/extract_skills")
-def extract_skills_from_text(payload: TextInput, top_job: str = None):
-    skills_detected = extract_skills(payload.text)
-    ranking = match_jobs(skills_detected)
-    missing = get_missing_skills_by_job(skills_detected)
+@router.post("/skills")
+def calculate_skills(payload: SkillsRequest):
+    extracted_skills = extract_skills(payload.text)
+    results = skills_for_jobs(
+        skills=extracted_skills,
+        predicted_jobs=payload.predicted_jobs,
+    )
 
-    top1_job_info = None
-    if top_job:
-        top1_job_info = top1_comparison(top_job, skills_detected)
+    if not results:
+        raise HTTPException(
+            status_code=400,
+            detail="None of the predicted jobs exist in job_skills",
+        )
 
     return {
-        "extracted_skills": skills_detected,
-        "ranking": ranking,
-        "missing_skills_by_job": missing,
-        "top1": top1_job_info or (ranking[0]["job_title"] if ranking else None)
+        "extracted_skills": extracted_skills,
+        "results": results,
     }
