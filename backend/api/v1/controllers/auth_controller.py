@@ -34,7 +34,6 @@ def login_user(data: UserLogin):
             "id": user["idusers"],
             "email": user["email"],
             "name": user.get("name"),
-            "avatar": user.get("avatar")
         }
     }
 
@@ -61,7 +60,6 @@ def register_user(data: UserRegister):
                 data.email,
                 hashed_password,
                 data.name,
-                data.avatar
             )
         )
         conn.commit()
@@ -83,7 +81,6 @@ def register_user(data: UserRegister):
         "user": {
             "email": data.email,
             "name": data.name,
-            "avatar": data.avatar
         }
     }
 
@@ -109,18 +106,17 @@ def update_user(user_id: int, data: UserUpdate):
 
     new_email = data.email
     new_name = data.name
-    new_avatar = data.avatar
     new_pass = hash_password(data.password) if data.password else None
 
     cursor.execute(
         UPDATE_USER_QUERY,
-        (new_email, new_pass, new_name, new_avatar, user_id),
+        (new_email, new_pass, new_name, user_id),
     )
 
     conn.commit()
 
     cursor.execute(
-        "SELECT idusers, email, name, avatar FROM users WHERE idusers=%s",
+        "SELECT idusers, email, name FROM users WHERE idusers=%s",
         (user_id,)
     )
     updated = cursor.fetchone()
@@ -131,6 +127,5 @@ def update_user(user_id: int, data: UserUpdate):
             "id": updated["idusers"],
             "email": updated["email"],
             "name": updated["name"],
-            "avatar": updated["avatar"]
         }
     }
