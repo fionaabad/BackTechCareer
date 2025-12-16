@@ -12,7 +12,6 @@ class UserRegister(BaseModel):
     email: EmailStr
     password: str
     confirm_password: str
-    avatar: Optional[str] = None
 
 
 class UpdatePassword(BaseModel):
@@ -24,4 +23,3 @@ class UserUpdate(BaseModel):
     name: Optional[str] = None
     email: Optional[EmailStr] = None
     password: Optional[str] = None
-    avatar: Optional[str] = None
