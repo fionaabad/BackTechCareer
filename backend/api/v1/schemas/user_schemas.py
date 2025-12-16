@@ -1,8 +1,9 @@
 from pydantic import BaseModel, EmailStr
+from typing import Optional
 
 
 class UserLogin(BaseModel):
-    email: str
+    email: EmailStr
     password: str
 
 
@@ -10,7 +11,8 @@ class UserRegister(BaseModel):
     name: str
     email: EmailStr
     password: str
-    avatar: str | None = None
+    confirm_password: str
+    avatar: Optional[str] = None
 
 
 class UpdatePassword(BaseModel):
@@ -19,7 +21,7 @@ class UpdatePassword(BaseModel):
 
 
 class UserUpdate(BaseModel):
-    name: str | None = None
-    email: str | None = None
-    password: str | None = None
-    avatar: str | None = None
+    name: Optional[str] = None
+    email: Optional[EmailStr] = None
+    password: Optional[str] = None
+    avatar: Optional[str] = None
