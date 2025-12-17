@@ -7,13 +7,13 @@ import json
 
 MODEL_PATH = "backend/ml/models/cv_role/model.pkl"
 VECTORIZER_PATH = "backend/ml/models/cv_role/vectorizer.pkl"
-SKILLS_DICT_PATH = "backend/ml/models/skills/skill_dict.json"
-JOB_SKILLS_PATH = "backend/ml/models/skills/job_skills.json"
+SKILLS_INFO_PATH = "backend/ml/models/skills/skills_info.json"
+JOB_SKILLS_PATH = "backend/ml/models/skills/jobs_dict.json"
 
 modelo = joblib.load(MODEL_PATH)
 vectorizer = joblib.load(VECTORIZER_PATH)
 
-with open(SKILLS_DICT_PATH, "r", encoding="utf-8") as f:
+with open(SKILLS_INFO_PATH, "r", encoding="utf-8") as f:
     skill_dict = {k.lower(): v for k, v in json.load(f).items()}
 
 with open(JOB_SKILLS_PATH, "r", encoding="utf-8") as f:
@@ -41,15 +41,20 @@ def predict_text(cv_text: str):
 
     return {"prediccion": best_title, "top3": top3, "probabilidades": probs_dict}
 
-def extract_skills(text: str) -> list[str]:
+def extract_skills(text: str) -> list[dict]:
     text = text.lower()
-    found = []
+    found = set()
 
     for skill in skill_dict.keys():
         if re.search(r"\b" + re.escape(skill) + r"\b", text):
-            found.append(skill)
+            found.add(skill)
 
-    return sorted(set(found))
+    enriched_skills = [
+        {"skill": s, **skill_dict.get(s, {})} for s in sorted(found)
+    ]
+
+    return enriched_skills
+
 
 def skills_for_jobs(skills: list[str], predicted_jobs: list[str]) -> list[dict]:
     user_skills = set(skills)
@@ -65,8 +70,12 @@ def skills_for_jobs(skills: list[str], predicted_jobs: list[str]) -> list[dict]:
 
         results.append({
             "job_title": job_title,
-            "matching_skills": matching_skills,
-            "missing_skills": missing_skills,
+            "matching_skills": [
+                {"skill": s, **skill_dict.get(s, {})} for s in matching_skills
+            ],
+            "missing_skills": [
+                {"skill": s, **skill_dict.get(s, {})} for s in missing_skills
+            ],
             "matching_skills_count": len(matching_skills),
             "missing_skills_count": len(missing_skills),
         })

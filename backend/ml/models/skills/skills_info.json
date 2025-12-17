@@ -1,0 +1,502 @@
+{
+  "azure": {
+    "group": "Cloud Computing & Platforms",
+    "group_id": 4,
+    "description": "Microsoft cloud platform for compute, storage, databases and managed services."
+  },
+  "hadoop": {
+    "group": "Data Engineering & Big Data",
+    "group_id": 8,
+    "description": "Big data ecosystem for distributed storage and batch processing."
+  },
+  "nosql": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Database technology used to store, query and manage structured or semi-structured data."
+  },
+  "security": {
+    "group": "Security, DevSecOps & Compliance",
+    "group_id": 7,
+    "description": "Controls and practices to secure systems, manage access and meet compliance requirements."
+  },
+  "spark": {
+    "group": "Data Engineering & Big Data",
+    "group_id": 8,
+    "description": "Distributed processing engine for large-scale data transformations and analytics."
+  },
+  "cloud computing": {
+    "group": "Cloud Computing & Platforms",
+    "group_id": 4,
+    "description": "Cloud services and platforms used to deploy, scale and operate applications and data workloads."
+  },
+  "aws": {
+    "group": "Cloud Computing & Platforms",
+    "group_id": 4,
+    "description": "Amazon Web Services cloud platform for compute, storage, databases and managed services."
+  },
+  "ci/cd": {
+    "group": "DevOps, SRE & Platform Engineering",
+    "group_id": 6,
+    "description": "Practices and pipelines to automatically build, test and deploy software."
+  },
+  "docker": {
+    "group": "DevOps, SRE & Platform Engineering",
+    "group_id": 6,
+    "description": "Containerization platform to package and run applications consistently across environments."
+  },
+  "networking": {
+    "group": "IT Operations, Networking & Systems",
+    "group_id": 3,
+    "description": "Operational skills to manage systems, networks and day-to-day IT services."
+  },
+  "linux": {
+    "group": "IT Operations, Networking & Systems",
+    "group_id": 3,
+    "description": "Operating system commonly used for servers, development and automation."
+  },
+  "automation": {
+    "group": "Infrastructure as Code & Automation",
+    "group_id": 10,
+    "description": "Declarative and automated approaches to provision infrastructure and manage configurations."
+  },
+  "scripting": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "python": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Programming language widely used for data processing, automation and software development."
+  },
+  "kubernetes": {
+    "group": "DevOps, SRE & Platform Engineering",
+    "group_id": 6,
+    "description": "Container orchestration platform to deploy, scale and manage distributed applications."
+  },
+  "jenkins": {
+    "group": "DevOps, SRE & Platform Engineering",
+    "group_id": 6,
+    "description": "Automation server used to implement CI/CD pipelines."
+  },
+  "git": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Version control system to track code changes and collaborate efficiently."
+  },
+  "maven": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "machine learning": {
+    "group": "Machine Learning & Artificial Intelligence",
+    "group_id": 5,
+    "description": "Methods and tools to train, evaluate and deploy predictive or intelligent models."
+  },
+  "communication": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "data science": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "project management": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "deep learning": {
+    "group": "Machine Learning & Artificial Intelligence",
+    "group_id": 5,
+    "description": "Methods and tools to train, evaluate and deploy predictive or intelligent models."
+  },
+  "stakeholder management": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "pytorch": {
+    "group": "Machine Learning & Artificial Intelligence",
+    "group_id": 5,
+    "description": "Methods and tools to train, evaluate and deploy predictive or intelligent models."
+  },
+  "data analysis": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "tensorflow": {
+    "group": "Machine Learning & Artificial Intelligence",
+    "group_id": 5,
+    "description": "Methods and tools to train, evaluate and deploy predictive or intelligent models."
+  },
+  "sql": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Query language used to retrieve, transform and manage data in relational databases."
+  },
+  "java": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Programming language used to build applications, automate tasks and work with data."
+  },
+  "data visualization": {
+    "group": "Data Science, Analytics & BI",
+    "group_id": 9,
+    "description": "Techniques and tools to analyze data, create reports and communicate insights."
+  },
+  "statistics": {
+    "group": "Data Science, Analytics & BI",
+    "group_id": 9,
+    "description": "Techniques and tools to analyze data, create reports and communicate insights."
+  },
+  "r": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Programming language used to build applications, automate tasks and work with data."
+  },
+  "google cloud": {
+    "group": "Cloud Computing & Platforms",
+    "group_id": 4,
+    "description": "Cloud services and platforms used to deploy, scale and operate applications and data workloads."
+  },
+  "agile methodologies": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "jira": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "keras": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "computer vision": {
+    "group": "Machine Learning & Artificial Intelligence",
+    "group_id": 5,
+    "description": "Methods and tools to train, evaluate and deploy predictive or intelligent models."
+  },
+  "natural language processing": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "algorithms": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "system administration": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "windows server": {
+    "group": "IT Operations, Networking & Systems",
+    "group_id": 3,
+    "description": "Operational skills to manage systems, networks and day-to-day IT services."
+  },
+  "troubleshooting": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "devops": {
+    "group": "DevOps, SRE & Platform Engineering",
+    "group_id": 6,
+    "description": "Practices and tools to automate delivery, improve reliability and operate systems at scale."
+  },
+  "css": {
+    "group": "Web, Mobile & UI/UX Development",
+    "group_id": 2,
+    "description": "Style language for designing and laying out web pages."
+  },
+  "html": {
+    "group": "Web, Mobile & UI/UX Development",
+    "group_id": 2,
+    "description": "Markup language for structuring web content."
+  },
+  "javascript": {
+    "group": "Web, Mobile & UI/UX Development",
+    "group_id": 2,
+    "description": "Programming language for web development and browser-based applications."
+  },
+  "kanban": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "confluence": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "scrum": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "mobile development": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "rest apis": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "ui/ux design": {
+    "group": "Web, Mobile & UI/UX Development",
+    "group_id": 2,
+    "description": "Technologies to build user-facing web/mobile experiences and product interfaces."
+  },
+  "android sdk": {
+    "group": "Web, Mobile & UI/UX Development",
+    "group_id": 2,
+    "description": "Technologies to build user-facing web/mobile experiences and product interfaces."
+  },
+  "kotlin": {
+    "group": "Web, Mobile & UI/UX Development",
+    "group_id": 2,
+    "description": "Programming language used to build applications, automate tasks and work with data."
+  },
+  "vulnerability management": {
+    "group": "Security, DevSecOps & Compliance",
+    "group_id": 7,
+    "description": "Controls and practices to secure systems, manage access and meet compliance requirements."
+  },
+  "penetration testing": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "node.js": {
+    "group": "Web, Mobile & UI/UX Development",
+    "group_id": 2,
+    "description": "JavaScript runtime for building server-side applications and APIs."
+  },
+  "virtualization": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "microservices": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "firewalls": {
+    "group": "IT Operations, Networking & Systems",
+    "group_id": 3,
+    "description": "Operational skills to manage systems, networks and day-to-day IT services."
+  },
+  "data structures": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "programming": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "debugging": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "software development": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "c++": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Programming language used to build applications, automate tasks and work with data."
+  },
+  "database design": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Database technology used to store, query and manage structured or semi-structured data."
+  },
+  "data wrangling": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "postgresql": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Database technology used to store, query and manage structured or semi-structured data."
+  },
+  "performance tuning": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "database management": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Database technology used to store, query and manage structured or semi-structured data."
+  },
+  "mysql": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Database technology used to store, query and manage structured or semi-structured data."
+  },
+  "backup and recovery": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "oracle": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Database technology used to store, query and manage structured or semi-structured data."
+  },
+  "django": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "vue.js": {
+    "group": "Web, Mobile & UI/UX Development",
+    "group_id": 2,
+    "description": "Technologies to build user-facing web/mobile experiences and product interfaces."
+  },
+  "react": {
+    "group": "Web, Mobile & UI/UX Development",
+    "group_id": 2,
+    "description": "JavaScript library for building interactive user interfaces."
+  },
+  "spring framework": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Framework/library used to build, structure or accelerate software development."
+  },
+  "angular": {
+    "group": "Web, Mobile & UI/UX Development",
+    "group_id": 2,
+    "description": "Technologies to build user-facing web/mobile experiences and product interfaces."
+  },
+  "typescript": {
+    "group": "Web, Mobile & UI/UX Development",
+    "group_id": 2,
+    "description": "Typed superset of JavaScript used to build scalable web applications."
+  },
+  "sass": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "mongodb": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Database technology used to store, query and manage structured or semi-structured data."
+  },
+  "express.js": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "junit": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "hibernate": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "j2ee": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "flask": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "ids/ips": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "network security": {
+    "group": "Security, DevSecOps & Compliance",
+    "group_id": 7,
+    "description": "Controls and practices to secure systems, manage access and meet compliance requirements."
+  },
+  "security auditing": {
+    "group": "Security, DevSecOps & Compliance",
+    "group_id": 7,
+    "description": "Controls and practices to secure systems, manage access and meet compliance requirements."
+  },
+  "objective-c": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "swift": {
+    "group": "Web, Mobile & UI/UX Development",
+    "group_id": 2,
+    "description": "Programming language used to build applications, automate tasks and work with data."
+  },
+  "flutter": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Professional skill or technology used in modern tech and data roles."
+  },
+  "ios": {
+    "group": "Web, Mobile & UI/UX Development",
+    "group_id": 2,
+    "description": "Technologies to build user-facing web/mobile experiences and product interfaces."
+  },
+  "react native": {
+    "group": "Web, Mobile & UI/UX Development",
+    "group_id": 2,
+    "description": "Technologies to build user-facing web/mobile experiences and product interfaces."
+  },
+  "php": {
+    "group": "Software Engineering & Development",
+    "group_id": 1,
+    "description": "Programming language used to build applications, automate tasks and work with data."
+  },
+  "windows server administration": {
+    "group": "IT Operations, Networking & Systems",
+    "group_id": 3,
+    "description": "Operational skills to manage systems, networks and day-to-day IT services."
+  },
+  "linux administration": {
+    "group": "IT Operations, Networking & Systems",
+    "group_id": 3,
+    "description": "Operational skills to manage systems, networks and day-to-day IT services."
+  },
+  "angularjs": {
+    "group": "Web, Mobile & UI/UX Development",
+    "group_id": 2,
+    "description": "Technologies to build user-facing web/mobile experiences and product interfaces."
+  },
+  "css3": {
+    "group": "Cloud Computing & Platforms",
+    "group_id": 4,
+    "description": "Cloud services and platforms used to deploy, scale and operate applications and data workloads."
+  },
+  "html5": {
+    "group": "Web, Mobile & UI/UX Development",
+    "group_id": 2,
+    "description": "Technologies to build user-facing web/mobile experiences and product interfaces."
+  }
+}
