@@ -13,6 +13,13 @@ SALARY_MODEL_PATH = "backend/ml/models/salaries/v3_salary_from_profile_hgb.pkl"
 # Cache en memòria
 _salary_model = None
 
+# --- FX (simple, deterministic) ---
+# ECB euro reference rate: 1 EUR = 1.1776 USD (16 Dec 2025)
+# So: EUR = USD / 1.1776
+USD_PER_EUR = 1.1776
+FX_DATE = "2025-12-16"
+FX_SOURCE = "ECB euro reference rate"
+
 # Mapping: Model 1 role -> role_label_salary (model 3)
 ROLE_TO_SALARY_ROLE: Dict[str, str] = {
     # Data / ML
@@ -74,7 +81,7 @@ def normalize_seniority(s: str) -> str:
         "principal": "lead",
         "staff": "lead",
     }
-    return mapping.get(s, s)  # si ve una etiqueta nova, la deixem tal qual
+    return mapping.get(s, s)
 
 
 def map_role_to_salary_role(role_label: str) -> Tuple[str, str]:
@@ -124,6 +131,7 @@ def predict_salary_from_profile(
     """
     Construeix el DataFrame (1 fila) i prediu salary en USD.
     Assumim que el model retorna log1p(salary) i fem expm1.
+    També retornem una conversió a EUR (ECB reference rate).
     """
     if not (seniority or "").strip():
         raise ValueError("seniority és obligatori")
@@ -150,9 +158,24 @@ def predict_salary_from_profile(
     pred_log = model.predict(X)[0]
     salary_pred_usd = float(np.expm1(pred_log))
 
+    # Convertim a EUR (simple i transparent)
+    salary_pred_eur = float(salary_pred_usd / USD_PER_EUR)
+
     return {
+        # Raw model output
         "salary_pred_usd": salary_pred_usd,
-        "currency": "USD",
+        "currency_model": "USD",
+
+        # Converted output (UI-friendly)
+        "salary_pred_eur": salary_pred_eur,
+        "currency_display": "EUR",
+
+        # FX metadata (important per no “mentir”)
+        "fx_usd_per_eur": USD_PER_EUR,
+        "fx_date": FX_DATE,
+        "fx_source": FX_SOURCE,
+
+        # Debug/trace
         "role_used": role_label_salary,
         "seniority_used": seniority_norm,
         "confidence": confidence,

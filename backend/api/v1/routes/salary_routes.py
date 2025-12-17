@@ -29,71 +29,6 @@ class SalaryProfileInput(BaseModel):
     remote_ratio: int = 50
 
 
-@router.post("/predict_salary_from_pdf")
-async def predict_salary_from_pdf(
-    file: UploadFile = File(...),
-    country: str = "ES",
-    company_size: str = "M",
-    employment_type: str = "FT",
-    work_year: int = 2025,
-    remote_ratio: int = 50,
-):
-    """
-    Orquestra:
-    PDF -> text -> role (model1) + seniority (model2) -> salary (model3)
-    Amb defaults configurables via query params.
-    """
-    pdf_bytes = await file.read()
-    text = extract_text_from_pdf(pdf_bytes)
-
-    if not text.strip():
-        raise HTTPException(status_code=400, detail="El PDF no contiene texto legible.")
-
-    # 1) Role (Model 1)
-    try:
-        role_result = predict_text(text)
-        role_label = role_result["prediccion"]
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error prediciendo rol: {str(e)}")
-
-    # 2) Seniority (Model 2)
-    try:
-        seniority = predict_seniority_from_text(text)
-    except FileNotFoundError as e:
-        raise HTTPException(status_code=500, detail=str(e))
-    except ValueError as e:
-        raise HTTPException(status_code=400, detail=str(e))
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error prediciendo seniority: {str(e)}")
-
-    # 3) Salary (Model 3)
-    try:
-        salary_result = predict_salary_from_profile(
-            role_label=role_label,
-            seniority=seniority,
-            country=country,
-            company_size=company_size,
-            employment_type=employment_type,
-            work_year=work_year,
-            remote_ratio=remote_ratio,
-        )
-    except FileNotFoundError as e:
-        raise HTTPException(status_code=500, detail=str(e))
-    except ValueError as e:
-        raise HTTPException(status_code=400, detail=str(e))
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error prediciendo salary: {str(e)}")
-
-    # Resposta unificada (UI-friendly)
-    return {
-        "filename": file.filename,
-        "role": role_label,
-        "seniority": seniority,
-        "salary": salary_result,  # inclou salary_pred_usd, confidence, role_used, etc.
-        "top3": role_result.get("top3", []),
-        "probabilidades": role_result.get("probabilidades", {}),
-    }
-
 @router.post("/predict_salary_profile")
 def predict_salary_profile(payload: SalaryProfileInput):
     try:
@@ -114,3 +49,67 @@ def predict_salary_profile(payload: SalaryProfileInput):
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error prediciendo salary: {str(e)}")
+
+from fastapi import APIRouter
+from typing import Dict, List, Any
+
+router = APIRouter(tags=["Salary"])
+
+REMOTE_RATIO_OPTIONS = [
+    {"value": 0, "label": "Presencial"},
+    {"value": 50, "label": "Híbrido"},
+    {"value": 100, "label": "Remoto"},
+]
+
+COMPANY_SIZE_OPTIONS = [
+    {"value": "S", "label": "Pequeña"},
+    {"value": "M", "label": "Mediana"},
+    {"value": "L", "label": "Grande"},
+]
+
+EMPLOYMENT_TYPE_OPTIONS = [
+    {"value": "FT", "label": "Full-time"},
+    {"value": "PT", "label": "Part-time"},
+    {"value": "CT", "label": "Contrato"},
+    {"value": "FL", "label": "Freelance"},
+]
+
+WORK_YEAR_OPTIONS = [{"value": y, "label": str(y)} for y in [2020, 2021, 2022, 2023, 2024]]
+
+SENIORITY_OPTIONS = [
+    {"value": "junior", "label": "Junior"},
+    {"value": "mid", "label": "Mid"},
+    {"value": "senior", "label": "Senior"},
+    {"value": "lead", "label": "Lead"},
+]
+
+# Países: si tienes pycountry, genial; si no, al menos devuelve codes
+try:
+    import pycountry  # type: ignore
+
+    def country_label(code: str) -> str:
+        c = pycountry.countries.get(alpha_2=code)
+        return c.name if c else code
+except Exception:
+    def country_label(code: str) -> str:
+        return code
+
+COUNTRY_CODES = [
+    # puedes meter los 70, o de momento top + ES, y luego ampliar
+    "US","GB","CA","ES","DE","IN","FR","PT","GR","AU","BR","NL","PL","IT","JP","IE","VN",
+    "PK","TR","MX","NG","AE","AR","SI","CO","BE","PH","RU","EG","LT"
+]
+
+COUNTRY_OPTIONS = [{"value": c, "label": country_label(c)} for c in COUNTRY_CODES]
+
+
+@router.get("/salary/options")
+def salary_options() -> Dict[str, Any]:
+    return {
+        "country": COUNTRY_OPTIONS,
+        "company_size": COMPANY_SIZE_OPTIONS,
+        "employment_type": EMPLOYMENT_TYPE_OPTIONS,
+        "work_year": WORK_YEAR_OPTIONS,
+        "remote_ratio": REMOTE_RATIO_OPTIONS,
+        "seniority": SENIORITY_OPTIONS,
+    }
