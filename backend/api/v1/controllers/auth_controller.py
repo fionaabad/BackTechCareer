@@ -29,11 +29,12 @@ def login_user(data: UserLogin):
         raise HTTPException(status_code=401, detail="Contraseña incorrecta.")
 
     return {
-        "message": "Login exitoso",
-        "user": {
-            "id": user["idusers"],
-            "email": user["email"],
-            "name": user.get("name"),
+    "message": "Login exitoso",
+    "user": {
+        "id": user["idusers"],
+        "email": user["email"],
+        "name": user.get("name"),
+        "role": user["role"]
         }
     }
 
@@ -55,12 +56,13 @@ def register_user(data: UserRegister):
     try:
         # 3️⃣ Insert usuario
         cursor.execute(
-            REGISTER_QUERY,
-            (
-                data.email,
-                hashed_password,
-                data.name,
-            )
+        REGISTER_QUERY,
+        (
+            data.email,
+            hashed_password,
+            data.name,
+            data.role
+        )
         )
         conn.commit()
 
@@ -81,8 +83,10 @@ def register_user(data: UserRegister):
         "user": {
             "email": data.email,
             "name": data.name,
+            "role": data.role
         }
     }
+
 
 
 def update_password_controller(data: UpdatePassword):

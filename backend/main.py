@@ -5,6 +5,7 @@ from backend.api.v1.routes.auth_routes import router as auth_router
 from backend.api.v1.routes.predict_routes import router as predict_router
 from backend.api.v1.routes.analyze_routes import router as analyze_router
 from backend.api.v1.routes.salary_routes import router as salary_router
+from backend.api.v1.routes import pdf_routes
 
 # ❌ chat desactivado
 # from backend.api.v1.routes.chat_routes import router as chat_router
@@ -26,6 +27,7 @@ app.include_router(auth_router, prefix="/api/v1", tags=["Auth"])
 app.include_router(predict_router, prefix="/api/v1", tags=["Predict"])
 app.include_router(analyze_router, prefix="/api/v1", tags=["Analyze CV"])
 app.include_router(salary_router, prefix="/api/v1", tags=["Salary"])
+app.include_router(pdf_routes.router)
 
 
 # ❌ NO incluir chat

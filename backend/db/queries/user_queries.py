@@ -1,12 +1,12 @@
 LOGIN_QUERY = """
-SELECT idusers, email, password, name
-FROM users 
+SELECT idusers, email, password, name, role
+FROM users
 WHERE email = %s
 """
 
 REGISTER_QUERY = """
-INSERT INTO users (email, password, name)
-VALUES (%s, %s, %s)
+INSERT INTO users (email, password, name, role)
+VALUES (%s, %s, %s, %s)
 """
 
 UPDATE_USER_QUERY = """
