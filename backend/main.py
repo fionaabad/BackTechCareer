@@ -3,9 +3,10 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from backend.api.v1.routes.auth_routes import router as auth_router
 from backend.api.v1.routes.predict_routes import router as predict_router
-from backend.api.v1.routes.skills_routes import router as skills_router
 from backend.api.v1.routes.analyze_routes import router as analyze_router
 from backend.api.v1.routes.salary_routes import router as salary_router
+from backend.api.v1.routes.cv_test_routes import router as cv_test_router
+
 
 # ❌ chat desactivado
 # from backend.api.v1.routes.chat_routes import router as chat_router
@@ -25,9 +26,14 @@ app.add_middleware(
 
 app.include_router(auth_router, prefix="/api/v1", tags=["Auth"])
 app.include_router(predict_router, prefix="/api/v1", tags=["Predict"])
-app.include_router(skills_router, prefix="/api/v1/skills", tags=["Skills"])
 app.include_router(analyze_router, prefix="/api/v1", tags=["Analyze CV"])
 app.include_router(salary_router, prefix="/api/v1", tags=["Salary"])
+app.include_router(
+    cv_test_router,
+    prefix="/api/v1",
+    tags=["CV Test"]
+)
+
 
 
 # ❌ NO incluir chat
