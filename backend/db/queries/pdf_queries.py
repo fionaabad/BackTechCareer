@@ -1,5 +1,5 @@
 INSERT_PDF_QUERY = """
-INSERT INTO users_pdfs (user_id, filename, file_path, processed)
+INSERT INTO users_pdfs (user_id, filename, storage_path, processed)
 VALUES (%s, %s, %s, %s)
 """
 
