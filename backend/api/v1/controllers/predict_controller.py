@@ -57,7 +57,12 @@ def extract_skills(text: str) -> list[dict]:
 
 
 def skills_for_jobs(skills: list[dict], predicted_jobs: list[str]) -> list[dict]:
-    user_skills = set(skill["skill"] for skill in skills)
+
+    if skills and isinstance(skills[0], dict):
+        user_skills = {skill["skill"].lower() for skill in skills}
+    else:
+        user_skills = {skill.lower() for skill in skills}
+
     results = []
 
     for job_title in predicted_jobs:
