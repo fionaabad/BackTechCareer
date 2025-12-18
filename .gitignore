@@ -34,3 +34,9 @@ env/
 # MODELOS entrenados
 # =======================
 models/*
+
+
+# CV
+# PDFs y CVs subidos por usuarios
+backend/uploads/
+backend/uploads/**

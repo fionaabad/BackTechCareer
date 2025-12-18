@@ -1,5 +1,5 @@
 from pydantic import BaseModel, EmailStr
-from typing import Optional
+from typing import Optional, Literal
 
 
 class UserLogin(BaseModel):
@@ -12,6 +12,7 @@ class UserRegister(BaseModel):
     email: EmailStr
     password: str
     confirm_password: str
+    role: Literal["particular", "empresa"]
 
 
 class UpdatePassword(BaseModel):

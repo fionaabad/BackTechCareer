@@ -56,8 +56,8 @@ def extract_skills(text: str) -> list[dict]:
     return enriched_skills
 
 
-def skills_for_jobs(skills: list[str], predicted_jobs: list[str]) -> list[dict]:
-    user_skills = set(skills)
+def skills_for_jobs(skills: list[dict], predicted_jobs: list[str]) -> list[dict]:
+    user_skills = set(skill["skill"] for skill in skills)
     results = []
 
     for job_title in predicted_jobs:
