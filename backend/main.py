@@ -11,19 +11,26 @@ from backend.api.v1.routes import pdf_routes
 # ❌ chat desactivado
 # from backend.api.v1.routes.chat_routes import router as chat_router
 
+
 app = FastAPI(
     title="TechCareer API",
     version="1.0.0"
 )
 
+# ========================
+# CORS (OBLIGATORIO FRONT)
+# ========================
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["*"],          # Dev → luego restringir
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
+# ========================
+# ROUTERS
+# ========================
 app.include_router(auth_router, prefix="/api/v1", tags=["Auth"])
 app.include_router(predict_router, prefix="/api/v1", tags=["Predict"])
 app.include_router(analyze_router, prefix="/api/v1", tags=["Analyze CV"])
@@ -36,11 +43,13 @@ app.include_router(
 
 app.include_router(pdf_routes.router)
 
-
 # ❌ NO incluir chat
 # app.include_router(chat_router, prefix="/api/v1", tags=["Chat"])
 
 
+# ========================
+# HEALTHCHECK
+# ========================
 @app.get("/health")
 def health():
     return {"status": "ok"}
